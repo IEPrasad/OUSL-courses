@@ -4,6 +4,10 @@
   <title>sample web page</title>
 
   <style>
+    body {
+      padding: 100px;
+    }
+
     option {
       background-color: lightpink;
       margin: 20px 40px;
@@ -12,15 +16,13 @@
     option:hover {
       background-color: darkblue;
     }
+    table {
+      margin-top: 100px;
+    }
   </style>
 
 </head>
-<body style="
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;
-">
+<body>
   <div>Select your gender </div>
   <select name="sample" id="">
     <option value="">Male</option>
@@ -29,8 +31,71 @@
   </select>
 
 
-  <table>
-    
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Subject</th>
+      <th>Mark</th>
+    </tr>
+
+    <tr>
+      <td>Isuru</td>
+      <td>Maths</td>
+      <td>92</td>
+    </tr>
+
+    <tr>
+      <td>Kaveen</td>
+      <td>Science</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+
+  <table border="1">
+    <tr>
+      <th rowspan="2" colspan="1" >Index number</th>
+      <th rowspan="1">Name</th>
+      <th rowspan="1">Age</th>
+      <th rowspan="1">Gender</th>
+    </tr>
+
+    <tr>
+      <td>200</td>
+      <td>Eranda</td>
+      <td>23</td>
+      <td><select>
+        <option selected>Select</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select></td>
+    </tr>
+
+    <tr>
+      <td>200</td>
+      <td>Isuru</td>
+      <td>22</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>Isuru</td>
+      <td>22</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>Isuru</td>
+      <td>22</td>
+      <td>13</td>
+    </tr>
+
   </table>
 </body>
 </html>
+
+
+
+
+
+
