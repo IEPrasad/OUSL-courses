@@ -1,0 +1,110 @@
+	
++--------------------------------------+
+
+	Name = J.V.G.I.E Prasad
+	S Number = S23010155
+	Reg: number = 523593409
+
++--------------------------------------+
+
+Answer for the EEX 3266 - 2.5 Activity
+
+1).  List down five open-source DBMSs and their application environment
+	1- MySQL
+	2- PostgreSQL
+	3- SQLite
+	4- MongoDB
+	5- MariaDB
+
+2).  List down at least three single-user DBMSs
+	1- MS Access
+	2- SQLite
+	3- FileMaker
+
+3) What are the five major parts of a database system?
+	1- Data 
+	2- Database Mangement System (DBMS)
+	3- Hardware 
+	4- Software
+	5- Users
+
+4)  Why is a spreadsheet NOT a database?
+
+	** A spreadsheet is not a database, because it dosen't have a proper structure or proper oraganization, 
+	concurrent access and robust data integrity as in a database. 
+	So it cannot be a database. 
+
+5) Discuss the functions of each layer in the 'three-tier’ database architecture, 
+	 and define the necessary tools involved
+
+	1- Presentation Tier 
+		** Function: Manage the user interface and facilitates interaction between users and the application or that system.
+
+		** Tools: HTML CSS JavaScript, Graphical User Interfaces, or user interfaces built with a React or Vue.js,
+		or web browsers, mobile apps, desktop applications 
+
+	2. Application Tier 
+		** Function: Manges business logics and application processes.
+			Applies business rules and validations.
+		
+		** Tools: Sever side scripting languages (Java, Python, C#), Sever side frameworks (Django, Spring, Express.js)
+
+	3. Data Tier
+		** Function: Store and retireve dats.
+		** Tools: Database Management Systems. (MySQL, PostgreSQL, Oracle).
+				
+6). How is a conceptual design different from a logical design?
+
+		** Conceptual Design: 
+				- Defines entities, relationships, and high-level structures without specific technical details 
+				but 
+		** Logical Design: 
+				- Trnaslate conceptual design into more detailed structure, specifying data types and keys and relationships. 
+		
+7).  Compare and contrast between external view and conceptual view
+
+		** External View 
+	
+Focus: Specific user need and tasks.
+
+Users: Specific user groups or applications.
+
+Customization: Multiple views tailored to different user needs and exist.
+
+Details: Shows only relevent data for specific fucntions.
+
+Changes: Easy to modify
+
+
+		** Conceptual view
+
+Focus: Overall data structure and relationships between entities.
+
+Users: Database administrators and developers.
+
+Uniqueness: Single, global view representing the entire database structure.
+
+Details: Shows a good picture of data entities and their relationships.
+
+Changes: Changes affeting how users see things and need to be carefull to prevent mistakes.
+
+------->>> 
+Analogy : 
+	We can understand the differece between External view and Conceptual view by this example.
+
+		** External view is like looking at a resturant menu that only shows lunch options.
+		** Conceptual view is like having the entire recipe book with all the recipes.
+
+08).  Which level of the database architecture does the database administrator work with?
+
+		** Physical level.
+
+09).  Which level of the database architecture does the application programmer work with?
+
+		** External level.
+
+10).  What is logical data independence and why is it important?
+
+
+
+
