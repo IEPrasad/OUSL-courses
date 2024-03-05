@@ -105,6 +105,83 @@ Analogy :
 
 10).  What is logical data independence and why is it important?
 
+		** The ability to change the logical schema, without changing the external schema or user view,
+		is called "logical data independence".
+
+		** Allows altering the database structure without breaking existing applications or user interfaces.
+		
+
+11).  Explain the difference between external, internal, and conceptual schemas. How are these 
+			different schema layers related to the concepts of logical and physical data independence?
+
+		** External Schema 
+				- Represents user view.
+				- Concerned with logical data independence.
+
+		** Conceptual Schema
+				- Describe overall structure.
+				- Allows to logical data independence.
+
+		** Internal Schema
+				- Deals with physical storeage.
+				- Ensures physical data independence.
+
+		Logical Data Independence
+			** Modifies logical schema.
+			** No impact on external views.
+
+		Physical Data Independence
+			** Modifies physical schema.
+			** No impact on logical or external views.
 
 
+12).  Explain the basic features of relational database model. Define if there are any emerging 
+    	database models apart from relational databases?
 
+		** Features of relational database model.
+				. Tables with rows and columns
+				. Primary keys for unique identification
+				. Normalization for data intergrity
+				. SQL for defining and querying 
+
+		** NoSQL Database: Flexible for unstrucured data.(MongoDB)
+		** Graph Database: Designed for complex relationship data.
+		** Document Stores: Store data in document format
+				(MongoDB)
+	
+13). What does the acronym SDLC mean?
+			** Software development life cycle.
+
+14). Explain in details the steps involved in Database Life Cycle.
+
+Requirements: 
+	* Identify user needs and sytem requirements for the database
+
+Analysis:
+	* Analyze data and processes, defining relationships and constraints.
+
+Design: 
+	* Create a blueprint for the database, specifying tables, keys and structures.
+
+Implementation:
+	* Develop the database according to the design using a chosen DBMS.
+
+Testing:
+	* Validate the database for accuracy, performance, and security.
+
+Maintenance:
+	* Regularly update, enhance, and optimize the database to meet evoling needs.
+
+
+15). What are the disadvantages of using waterfall model?
+
+-Rigidity:	
+	* Limited adaptability.
+
+- Limited User involvement 
+- Late Visibility of Product 
+- No partial deliverables
+- Challenging in handling changes and uncertainties.
+- Testing deferred until project completion.
+
+---------------------------------------------------------------------------------------------------------
