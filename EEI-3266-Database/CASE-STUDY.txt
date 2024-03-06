@@ -1,0 +1,48 @@
+NOTE: 
+•	You need to strictly follow the above given guidelines. NOT following the guidelines may cause marks deduction. 
+•	Late submissions will be penalized according to OUSL Assignment guidelines. 
+•	Complete CASE STUDY must be your own work and providing someone else’s work or answer will result in a grade of zero for the case study. 
+•	Answers should be clear, and readable. Unclear, unreadable, copied, and direct reproduction from the textbooks and internet will not gain any points for the answers. Delayed submissions will count minus marks.
+
+Case study submission due date: on or before 09th March 2024 
+
+You need to develop a report of a maximum of 1-2 pages containing the answers to the following questions. Answer both the questions given below. (80 marks)
+
+1. Identify someone you know who works for an enterprise (relatively large organization) like insurance, firm, bank, hospital, etc). Inquire from that person, is there any Information System is implemented in their organization. If yes, continue your interview to address the ansers for the following questions?
+a. Describe the background of the enterprise you have selected. (5 Marks)
+
+b. What are the objectives of following this information system for that enterprise? (10 marks)
+c. Describe data that is used as the input to the system? (5 Marks)
+d. Describe the implementation strategy of the Information System (10 marks)
+e. What are the outcomes obtained from this information system? (10 marks)
+f. What are the benefits obtained by maintaining this information system? (10 marks)
+g. Based on the decisions made by the Information System, are the any changes made in the organization? If yes, list those. (10 marks)
+h. What are the metrics used by organization to measure the success by following this information system (10 marks)
+i) What are the challenges faced while implementing this information system? (10 marks)
+j) What are the risks related to this information system they have identified? (10 marks)
+k) Are there any decisions automated by the information system or done in manual process? (10 marks)
+
+
+සටහන:
+• ඔබ ඉහත දී ඇති මාර්ගෝපදේශ දැඩි ලෙස අනුගමනය කළ යුතුය. මාර්ගෝපදේශ අනුගමනය නොකිරීම ලකුණු අඩු කිරීමට හේතු විය හැක.
+• OUSL පැවරුම් මාර්ගෝපදේශ අනුව ප්‍රමාද වූ ඉදිරිපත් කිරීම්වලට දඩුවම් ලැබේ.
+• සම්පූර්ණ සිද්ධි අධ්‍යයනය ඔබේම කාර්යයක් විය යුතු අතර වෙනත් කෙනෙකුගේ කාර්යයක් හෝ පිළිතුරක් සැපයීමෙන් සිද්ධි අධ්‍යයනය සඳහා ශුන්‍ය ශ්‍රේණියක් ලැබෙනු ඇත.
+• පිළිතුරු පැහැදිලි සහ කියවිය හැකි විය යුතුය. නොපැහැදිලි, කියවිය නොහැකි, පිටපත් කරන ලද සහ පෙළපොත් සහ අන්තර්ජාලයෙන් සෘජුව ප්‍රතිනිෂ්පාදනය කිරීමෙන් පිළිතුරු සඳහා ලකුණු කිසිවක් නොලැබේ. ප්‍රමාද වූ ඉදිරිපත් කිරීම් සෘණ ලකුණු ගණන් කරනු ඇත.
+
+සිද්ධි අධ්‍යයනය ඉදිරිපත් කළ යුතු දිනය: 2024 මාර්තු 09 හෝ ඊට පෙර
+
+පහත ප්‍රශ්නවලට පිළිතුරු අඩංගු උපරිම පිටු 1-2ක වාර්තාවක් ඔබ විසින් සකස් කළ යුතුය. පහත දක්වා ඇති ප්‍රශ්න දෙකටම පිළිතුරු සපයන්න. (ලකුණු 80)
+
+1. රක්ෂණ, සමාගම, බැංකුව, රෝහල, වැනි ව්‍යවසායක (සාපේක්ෂ වශයෙන් විශාල සංවිධානයක්) සඳහා වැඩ කරන ඔබ දන්නා කෙනෙකු හඳුනා ගන්න. එම පුද්ගලයාගෙන් විමසන්න, ඔවුන්ගේ ආයතනය තුළ කිසියම් තොරතුරු පද්ධතියක් ක්‍රියාත්මක වේද? ඔව් නම්, පහත ප්‍රශ්න සඳහා පිළිතුරු සැපයීමට ඔබේ සම්මුඛ පරීක්ෂණය දිගටම කරගෙන යන්නද?
+ඒ. ඔබ තෝරාගත් ව්යවසායයේ පසුබිම විස්තර කරන්න. (ලකුණු 5)
+
+බී. එම ව්‍යවසාය සඳහා මෙම තොරතුරු පද්ධතිය අනුගමනය කිරීමේ අරමුණු මොනවාද? (ලකුණු 10)
+c. පද්ධතියට ආදානය ලෙස භාවිතා කරන දත්ත විස්තර කරන්න? (ලකුණු 5)
+ඈ තොරතුරු පද්ධතියේ ක්‍රියාත්මක කිරීමේ උපාය මාර්ගය විස්තර කරන්න (ලකුණු 10)
+ඊ. මෙම තොරතුරු පද්ධතියෙන් ලැබෙන ප්‍රතිඵල මොනවාද? (ලකුණු 10)
+f. මෙම තොරතුරු පද්ධතිය පවත්වාගෙන යාමෙන් ලැබෙන ප්‍රතිලාභ මොනවාද? (ලකුණු 10)
+g. තොරතුරු පද්ධතිය විසින් ගනු ලබන තීරණ මත පදනම්ව, සංවිධානයේ යම් වෙනස්කම් සිදු කර තිබේද? ඔව් නම්, ඒවා ලැයිස්තුගත කරන්න. (ලකුණු 10)
+h. මෙම තොරතුරු පද්ධතිය (ලකුණු 10) අනුගමනය කිරීමෙන් සාර්ථකත්වය මැනීමට සංවිධානය විසින් භාවිතා කරන මිනුම් මොනවාද?
+i) මෙම තොරතුරු පද්ධතිය ක්‍රියාත්මක කිරීමේදී මුහුණ දෙන අභියෝග මොනවාද? (ලකුණු 10)
+j) ඔවුන් හඳුනාගෙන ඇති මෙම තොරතුරු පද්ධතියට සම්බන්ධ අවදානම් මොනවාද? (ලකුණු 10)
+k) තොරතුරු පද්ධතිය මගින් ස්වයංක්‍රීය කරන ලද හෝ අතින් ක්‍රියාවලියක සිදු කරන ලද තීරණ තිබේද? (ලකුණු 10)
