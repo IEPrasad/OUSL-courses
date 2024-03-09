@@ -1,0 +1,17 @@
+<sutudents>
+  <student1>
+    <fname>Isuru</fname>
+    <lname>Prasad</lname>
+    <subjects>
+      <sub1>
+        <name>Science</name>
+        <teacher>
+          <tname>Mr.Sarath Sir</tname>
+          <tage>52</tage>
+        </teacher>
+      </sub1>
+    </subjects>
+  </student1>
+</sutudents>
+
+<!-- This is how to write a XML code -->
