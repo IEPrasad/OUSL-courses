@@ -1,0 +1,64 @@
+<!-- 
+  XML 
+    ** eXtensible Markup Language
+  
+  HTML
+    ** Hyper Text Markup Language
+
+  __________________________________
+            XML
+      
+      ** Tags are no limited and not pre-defined .
+      ** Platform independent. 
+      ** Any type of data can be expresses as an 
+         XML document. 
+      ** Design to store and transport data.
+
+ -->
+
+<studentList>
+  <student id='1'>
+    <name>Kasun</name>
+    <age>34</age>
+  </student>
+    <student id='2'>
+    <name>Nimal</name>
+    <age>22</age>
+  </student>
+</studentList>
+
+ <!--__________ vvvvvvvvv _____________-->
+  <!-- -Formatted XML- -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<studentList>
+   <student id="1">
+      <name>Kasun</name>
+      <age>34</age>
+   </student>
+   <student id="2">
+      <name>Nimal</name>
+      <age>22</age>
+   </student>
+</studentList>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
