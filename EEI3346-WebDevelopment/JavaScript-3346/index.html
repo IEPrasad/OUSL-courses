@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DS4</title>
+</head>
+<body>
+  <h1>JavaScript For Loop</h1>
+
+  <p id="demo"></p>
+
+  <script>
+    var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+    var text = "";
+    var i;
+
+    for (i = 2; i < cars.length; i++) {
+      text += cars[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+  </script>
+</body>
+</html>
+
+
