@@ -41,12 +41,22 @@
 # -------------- ^^^^ marks for this 15/30 ------------
 
 
-total_amount = int(input("Enter total amount"))
+total_amount = int(input("Enter total amount: "))
+
 
 def Disount_Cal(total_amount):
+  amount = total_amount
   if (total_amount < 2500):
     amount -= total_amount * 5/100 
-  else if (total_amount > 2500 and )
+  elif (total_amount > 2500 and total_amount < 5000):
+    amount -= total_amount * 10/100
+  elif (total_amount > 5000):
+    amount -= total_amount * 15/100
+  
+    print("total_amount is: ", total_amount)
 
+  print("Discounted amount: ", amount)  
+
+Disount_Cal(total_amount)
 
         
