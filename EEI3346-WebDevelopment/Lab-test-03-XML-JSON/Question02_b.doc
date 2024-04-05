@@ -1,0 +1,4 @@
+<!ELEMENT Record (data+)>
+<!ELEMENT data (data-header, data-header, data-header, data-header, data-cell, data-cell, data-cell, data-cell)>
+<!ELEMENT data-header (#PCDATA)>
+<!ELEMENT data-cell (#PCDATA)>
