@@ -1,0 +1,37 @@
+{
+    "Books": [
+        {
+            "Type": "Fiction",
+            "The_book": [
+                {
+                    "title": "Madol Duwa",
+                    "author": "Martin Wickramasinghe",
+                    "year": 1947,
+                    "price": 800
+                }
+            ]
+        },
+        {
+            "Type": "Non-fiction",
+            "The_book": [
+                {
+                    "title": "Eda Heladiwa",
+                    "author": "Robot Nox",
+                    "year": 1681,
+                    "price": 1200
+                }
+            ]
+        },
+        {
+            "Type": "Mystery",
+            "The_book": [
+                {
+                    "title": "Trouble in Nuala",
+                    "author": "Harriet Steel",
+                    "year": 2016,
+                    "price": 1200
+                }
+            ]
+        }
+    ]
+}
