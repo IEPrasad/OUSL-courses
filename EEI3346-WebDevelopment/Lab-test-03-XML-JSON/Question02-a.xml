@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="emp.css"?>
+<!DOCTYPE globe>
+<globe>
+    <Country>
+        <country code="2003">
+            <name>United States of America</name>
+            <areawidth>50,000</areawidth>
+            <capital>Washington, D.C</capital>
+        </country>
+    </Country>
+    <Country>
+        <name>Canada</name>
+        <areawidth>100,000</areawidth>
+        <capital>Ottawa</capital>
+    </Country>
+    <Country>
+        <country code="2003" postal="00005">
+            <name>Norway</name>
+            <areawidth>60,000</areawidth>
+            <capital>Oslo</capital>
+        </country>
+    </Country>
+    <Country>
+        <name>Singapore</name>
+        <areawidth>65,000</areawidth>
+        <capital>Singapore</capital>
+    </Country>
+    <Country>
+        <name>England</name>
+        <areawidth>15,000</areawidth>
+        <capital>London</capital>
+    </Country>
+</globe>
