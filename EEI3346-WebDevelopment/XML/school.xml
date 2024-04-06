@@ -1,0 +1,42 @@
+
+
+<?xml version= "1.0" encoding="UTF-8"?>
+<school>
+  <student>
+    <name>Isuru Eranda Prasad</name>
+    <age>22</age>
+    <grade>university</grade>
+    <year>2023</year>
+  </student>
+  <student>
+    <name>Sadew Minsara</name>
+    <age>14</age>
+    <grade>10</grade>
+    <year>2024</year>
+  </student>
+</school>
+
+
+<!--  XML schema for this code  -->
+
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="school">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="student" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string/">
+              <xs:element name="grade" type="xs:string/">
+              <xs:element name="age" type="xs:integer/">
+              <xs:element name="year" type="xs:integer/">
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
