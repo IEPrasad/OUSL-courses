@@ -1,3 +1,30 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student1>
+    <name>Nipun</name>
+    <school>Vidyaraja</school>
+    <age>20</age>
+    <grade>13</grade>
+    <grade></grade>
+  </student1>
+  <student1>
+    <name>Daham</name>
+    <school>servatius</school>
+    <age>22</age>
+    <grade>University</grade>
+    <grade></grade>
+  </student1>
+
+</students>
+
+
+
+<!-- '''- - - - - - - - - XML schema for this code - - - - - - ''' -->
+
+
+
+
 <?xml version="1.0"?>
 <xs:schema xmlns:xs = "https://www.w3.org/2001/XMLSchema">
 
@@ -19,3 +46,7 @@
   </xs:element>
 
 </xs:schema>
+
+
+
+
