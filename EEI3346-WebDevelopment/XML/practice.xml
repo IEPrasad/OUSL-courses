@@ -50,3 +50,28 @@
 
 
 
+
+
+
+<!-- That is the practice for the XML and XML shema to 
+take the proper idea about those kind of things -->
+
+<!-- and also this code will same as the earlier codes and 
+after this code we will move for the hardest codes 
+ -->
+
+ <?xml version="1.0" encoding= "UTF-8"?>
+ <rooms>
+  <room1>
+    <roomnumber> 001</roomnumber>
+    <flownumber>02</flownumber>
+    <vp,
+  </room1>
+ </rooms>
+
+
+
+
+
+
+
