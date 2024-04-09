@@ -1,0 +1,49 @@
+<!-- this is exmaple code for the XML and XML schema -->
+
+<!-- That is the practice for the XML and XML shema to 
+take the proper idea about those kind of things -->
+
+<!-- and also this code will same as the earlier codes and 
+after this code we will move for the hardest codes 
+ -->
+
+ <?xml version="1.0" encoding= "UTF-8"?>
+ <rooms>
+  <room>
+    <roomnumber> 001</roomnumber>
+    <flownumber>First flow</flownumber>
+    <roomname>Sudu</roomname>
+    <price>2300Rs</price>
+  </room>
+  <room>
+    <roomnumber>002</roomnumber>
+    <flownumber>002</flownumber>
+    <roomname>suhani</roomname>
+    <price>5000</price>
+  </room>
+ </rooms>
+
+
+ <!-- xml schema for this code  -->
+
+ <?xml version="1.0"?>
+ <xs:schema xmlns:xs="https:www.w3.org/2001/XMLSchema">
+  
+  <xs:element name="rooms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="room">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="roomnumber" type="xs:integer"/>
+              <xs:element name="flownumber" type="xs:integer"/>
+              <xs:element name="roomname" type="xs:string"/>
+              <xs:element name="price" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+ 
+ <xs:schema>
