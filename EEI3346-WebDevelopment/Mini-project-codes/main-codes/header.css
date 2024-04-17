@@ -1,0 +1,55 @@
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-topic {
+  margin-left:75px;
+  font-family: ElsevierGulliver,Georgia,Times New Roman,Times,STIXGeneral,Cambria Math,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,Arial Unicode MS,serif !important;
+  text-decoration: underline rgb(48, 99, 97);
+  /* text-decoration: overline green; */
+  /* color: rgb(1, 48, 69); */
+}
+
+.header-first-word {
+  color: rgb(152, 130, 19);
+  text-shadow: none;
+}
+
+.header-second-word {
+  color: rgb(25, 122, 25);
+  text-shadow: 5px 5px 10px rgba(1, 16, 9, 0.2);
+}
+
+
+.header-triangle {
+  position: fixed;
+  display: flex;
+  left: 12px;
+  top: 12px;
+}
+
+.triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-top: 100px solid rgb(8, 76, 50);
+  border-top-left-radius: 6px;
+}
+
+.text {
+  position: absolute;
+  left: 35px;
+  top: -88px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(-50%, 50%) rotate(315deg);
+  color: rgb(212, 225, 207);
+  font-size: 20px;
+  font-weight: bold;  
+}
+
+
