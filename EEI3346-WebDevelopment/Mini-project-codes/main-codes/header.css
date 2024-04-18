@@ -1,16 +1,27 @@
+
+
 header {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.home-icon {
+  height: 50px;
+  width: 50px;
+}
+
+
 .header-topic {
-  margin-left:75px;
+  margin-left: 80px;
+  margin-bottom: 50px;
   font-family: ElsevierGulliver,Georgia,Times New Roman,Times,STIXGeneral,Cambria Math,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,Arial Unicode MS,serif !important;
   text-decoration: underline rgb(48, 99, 97);
   /* text-decoration: overline green; */
   /* color: rgb(1, 48, 69); */
 }
+
 
 .header-first-word {
   color: rgb(152, 130, 19);
@@ -52,4 +63,9 @@ header {
   font-weight: bold;  
 }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: fit-content; /* Reset height for smaller screens */
+  }
+}
 
