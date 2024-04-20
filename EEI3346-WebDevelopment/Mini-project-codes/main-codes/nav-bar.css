@@ -1,9 +1,3 @@
-a {
-  text-decoration: none;
-}
-.toggle-icon {
-  opacity: 0;
-}
 
 @media screen and (max-width: 768px) {
 .navbar {
@@ -11,21 +5,25 @@ a {
   flex-direction: column;
   background-color: #070501; 
   color: #fff;
-  width: 200px;
+  width: auto;
   padding: 10px;
   position: fixed;
   left: 0px;
   top: 0;
-  height: 100%;
+  height: auto;
   z-index: 1;
-  transform: translateX(-100%);
+  transform: translateX(-200%);
   transition: transform 0.3s ease-in-out;
+  top: 175px;
+  left: 12px;
 }
-
+header {
+  top: -10px;
+  left: 40px;
+}
 .navbar.show {
-  transform: translateY(0);
   transform: translateX(0);
-  width: auto;
+  width: 128px;
   height: auto;
 }
 
@@ -56,25 +54,35 @@ a {
 }
 
 .nav-links div {
-  padding: 10px 0;
-  border: none; /* Removed borders */
+  /* padding: 10px 0; */
+  border-left: 4px solid rgba(255, 255, 255, 0.5); 
+  border-right: 4px solid rgba(255, 255, 255, 0.5); 
+  margin-bottom: 12px;
+  margin-left: -10px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  
 }
-.nav-links div:hover {
-  background-color: rgb(183, 133, 25);
-}
-
-.nav-links li {
-  display: block;
-  margin-top: 10px;
-}
-
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
+.nav-links div a {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 90px;
+  padding-top: 15px;
+  padding-left: 14px;
   font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-left: 0px;
 }
+
 
 .nav-links div a:hover {
+  background-color: rgb(183, 133, 25);
   text-decoration: none;
   color: #000000; /* Change color on hover */
 }
@@ -87,8 +95,8 @@ a {
   font-size: 34px;
   cursor: pointer;
   position: absolute;
-  left: 43px;
-  top: 75px;
+  left: 68px;
+  top: 92px;
   z-index: 2;
 }
 .toggle-menu-btn:active {
@@ -113,11 +121,7 @@ a {
   margin-bottom: 10px;
   display: none; /* Hide image when toggle menu is open */
 }
-} 
-
-.navbar {
-top: 145px;
-height: auto;
-width: auto;
 }
+
+
 
