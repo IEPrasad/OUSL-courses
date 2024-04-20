@@ -5,6 +5,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 70px;
 }
 
 .home-icon {
@@ -18,6 +19,8 @@ header {
   margin-bottom: 50px;
   font-family: ElsevierGulliver,Georgia,Times New Roman,Times,STIXGeneral,Cambria Math,Lucida Sans Unicode,Microsoft Sans Serif,Segoe UI Symbol,Arial Unicode MS,serif !important;
   text-decoration: underline rgb(48, 99, 97);
+  text-transform: uppercase;
+  letter-spacing: 1cqb;
   /* text-decoration: overline green; */
   /* color: rgb(1, 48, 69); */
 }
