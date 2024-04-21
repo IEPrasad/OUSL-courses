@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@2.6.11"></script>
+</head>
+<style>
+  body {
+    background-color: rgb(220, 238, 245);
+    padding: 100px;
+  }
+
+  ol {
+    background-color: rgb(144, 208, 230);
+    display: inline-block;
+    padding: 12px;
+    padding-left: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  }
+  li {
+    margin-bottom: 20px;
+    color: blue;
+    font-family: sans-serif;
+    font-size: 24px;
+  }
+  span {
+    color: darkgoldenrod;
+    font-weight: bold;
+  }
+
+</style>
+<body>
+  <div>
+    <ol class="list">
+      <li>The name : <span>{{name}} </span></li>
+      <li>The age : <span>{{age}}</span></li>
+      <li>Address : <span>{{address}}</span></li>
+      <li>Friends : <span>{{friends}}</span></li>
+    </ol>
+  </div>
+
+
+  <script type="text/javascript">
+    let app = new Vue({
+      el: '.list',
+      data: {
+        name : "Perera",
+        age : "22",
+        address : "23/C, Galle road, matara",
+        friends : "Prasad, Safwan, Rasara, Sandaruwan"
+      }
+    })
+  </script>
+</body>
+</html>
