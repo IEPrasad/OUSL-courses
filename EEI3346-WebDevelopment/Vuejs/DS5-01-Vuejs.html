@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@2.6.11"></script>
+  <!-- ^^ this is call as CDN method
+    this is only good for the single page and 
+    this is not good for the large project !
+  -->
+</head>
+<body>
+  <div class="vue1">
+    <h>This is and example for the {{ name }}</h>
+  </div>
+
+  <script type="text/javascript">
+    var app = new Vue({
+      el: ".vue1", // Remember to put the correct ID in here or class
+      data: {
+        name: "Vue.js and for DS5 3346"
+      }
+    })
+
+  </script>
+
+
+</body>
+</html>
