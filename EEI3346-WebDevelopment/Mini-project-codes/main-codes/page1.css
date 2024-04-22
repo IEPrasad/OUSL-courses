@@ -1,44 +1,44 @@
+
 .page1 {
-  width: 94%;
   height: auto;
   display: flex;
   border: 2px solid rgba(255, 255, 255, 0.7);
   margin-top: 30px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-  background-color: transparent;
   border-radius: 4px;
-  position: relative;
   align-items: center;
   justify-content: space-between;
   vertical-align: top;
-  padding: 8px;
+  padding: 12px;
+  position: relative;
 }
 
-
 .intro {
-  width: 49%;
-  height: 98%;
-  /* border: 2px solid red; */
+  flex: 2;
+  height: auto;
+  border: 2px solid blue;
   background-color: rgba(13, 9, 9, 0.8);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: top;
+  justify-content: center;
   padding: 12px 10px 25px 12px;
   position: relative;
   border-radius: 5px;
+  padding-top: 130px;
 }
 
 .intro-topic {
+  position: absolute;
+  top: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 8px;
-  margin: 20px;
-  margin-bottom: 54px;
-  margin-left: 150px;
-  width: 80%;
+  /* margin: 20px; */
+  /* margin-bottom: 54px; */
+  /* margin-left: 150px; */
   text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
 }
@@ -63,13 +63,6 @@ li::selection {
   color: black;
 }
 
-
-
-.describe {
-  width: 49%;
-  height: 98%;
-  border: 2px solid red;
-}
 @media screen and (max-width: 768px) {
   
   .intro {
@@ -78,7 +71,6 @@ li::selection {
   
   .intro-topic {
     font-size: 22px;
-    margin-left: 160px;
   }
   .intro-content {
     font-size: 15px;
@@ -89,3 +81,25 @@ li::selection {
   }
 }
 
+.describe {
+  border: 2px solid red;
+  flex: 3;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  display: block;  
+}
+
+.d1 {
+  border: 5px solid black;
+  width: 100px;
+  display: block;
+}
+
+.d2 {
+  display: block;
+  height: 200px;
+  width: 300px;
+  border: 5px solid black;
+}
