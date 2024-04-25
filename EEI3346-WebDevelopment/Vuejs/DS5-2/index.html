@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>VueJs</title>
+    <script src="https://unpkg.com/vue@2.6.11"></script>
+</head>
+<body>
+  <div id="vue">
+  <h1> The University of {{ name }} </h1>
+
+    {{name}}
+  </div>
+  
+  <script type="text/javascript"> 
+    let app = new Vue({
+    el: '#vue',
+    data: {
+      name : "OUSL"
+    }
+  });
+  </script>
+
+</body>
+</html>
