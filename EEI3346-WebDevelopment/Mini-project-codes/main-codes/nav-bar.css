@@ -25,6 +25,7 @@ header {
   transform: translateX(0);
   width: 128px;
   height: auto;
+  z-index: 100;
 }
 
 .container {
@@ -88,7 +89,35 @@ header {
 }
 .toggle-icon {
   opacity: 1;
+  position: fixed;
+  top: 24px;
+  left: 24px;
 }
+
+.menu-toggle {
+  display: block;
+  opacity: 1;
+}
+
+.menu-toggle .menu-label {
+  position: fixed;
+  left: 10px;
+  top: 70px;
+  padding: 8px 12px;
+  background-color: black;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100000;
+}
+
+.menu-toggle:hover .menu-label {
+  opacity: 1;
+}
+
 .toggle-menu-btn {
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -97,7 +126,7 @@ header {
   position: absolute;
   left: 68px;
   top: 92px;
-  z-index: 2;
+  z-index: 1000;
 }
 .toggle-menu-btn:active {
   opacity: 0.4;
