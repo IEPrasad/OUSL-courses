@@ -1,0 +1,88 @@
+.about {
+  display: flex;
+  width: 80%;
+  height: auto;
+  align-items: top;
+  justify-content: center;
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 3;
+  flex-direction: column;
+  position: relative;
+  padding-top: 9%;
+  transition: opacity 0.15s;
+  opacity: 0.8;
+  margin-top: 70px;
+}
+
+.about:hover {
+  opacity: 1;
+}
+
+.about-topic {
+  top: 2%;
+  left: 4%;
+  text-decoration: underline;
+  position: absolute;
+  display: block;
+  height: fit-content;
+  margin: 1% 7%;
+  z-index: 20;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+}
+.about-topic:hover {
+  color: rgb(202, 107, 24);
+  text-decoration: underline;
+}
+
+.about-us, .mission {
+  color: rgb(202, 107, 24);
+  font-family: sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  line-height: 2.5ch;
+}
+
+.au {
+  margin-top: 50px;
+}
+
+.ab {
+  margin-top: 20px;
+  color: red;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.w {
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+}
+
+.ab-details {
+  font-family: sans-serif;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 17%;
+  }
+
+  .about-topic {
+    margin-left: 26%;
+  }
+}
+
