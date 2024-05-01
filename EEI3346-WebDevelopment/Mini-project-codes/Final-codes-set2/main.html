@@ -5,9 +5,13 @@
   <link rel="icon" type="image/png" href="icons/home-icon.png">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/body.css">
-  <link rel="stylesheet" href="nav-bar.css">
+  <link rel="stylesheet" href="styles/nav-bar.css">
   <link rel="stylesheet" href="styles/page1.css">
   <link rel="stylesheet" href="styles/page2.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/sollutions.css">
+  <link rel="stylesheet" href="styles/community-box.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
 
 </head>
 <body>
@@ -32,12 +36,12 @@
         <img src="" alt="" class="logo">
       </div>
       <div class="nav-links">
-        <div><a href="#">Home</a></div>
-        <div><a href="#">About</a></div>
-        <div><a href="#">Problems</a></div>
-        <div><a href="#">Solutions</a></div>
+        <div><a href="main.html">Home</a></div>
+        <div><a href="about.html">About</a></div>
+        <div><a href="problems.html">Problems</a></div>
+        <div><a href="sollutions.html">Solutions</a></div>
         <!-- <div><a href="#">Events</a></div> -->
-        <div><a href="#">Community</a></div>
+        <div><a href="community.html">Community</a></div>
       </div>
     </div>
   </nav>
@@ -53,7 +57,6 @@
   </div>
 
 
-    <!-- <img src="images/0_5.webp" alt=""> -->
     
     <div class="page1">
       <div class="intro">
@@ -69,36 +72,48 @@
           Together, we can combat environmental pollution and make a lasting impact on our planet.<br>
           Explore Combating Environmental Pollution today and join the fight for a cleaner, healthier world!
 
+          <ul class="my-details">
+            <li>Name: <span>J.V.G.I.E Prasad</span></li>
+            <li>S-number: <span>S23010155</span></li>
+            <li>Reg-number: <span>523593409</span></li>
+          </ul>
         </div>
+
       </div>
         <div class="describe">
           <div>
             <button class="d1">
-              <div class="topic">Water Pollution from Industrial Effluents</div>
+              <a href="#1"><div class="topic">Water Pollution from Industrial Effluents</div></a>
               <div class="d1-tooltip">CLick to view the content</div>
             </button>
             <button class="d1">
-              <div class="topic">Air Pollution from Vehicle Emissions</div>
+              <a href="#2">
+              <div class="topic">Air Pollution from Vehicle Emissions</div></a>
               <div class="d1-tooltip">CLick to view the content</div>
             </button>
             <button class="d1">
+              <a href="#3">
               <div class="topic"> Solid Waste Mismanagement </div>
+              </a>
               <div class="d1-tooltip">CLick to view the content</div>
             </button>
             <button class="d1">
-              <div class="topic"> Deforestation and Habitat Destruction </div>
+              <a href="#4">
+              <div class="topic"> Deforestation and Habitat Destruction </div></a>
               <div class="d1-tooltip">CLick to view the content</div>
             </button>            
-            <button class="d1">
-              <div class="topic"> Water Pollution from Agricultural Chemicals </div>
+            <button class="d1"><a href="#5">
+              <div class="topic"> Water Pollution from Agricultural Chemicals </div></a>
               <div class="d1-tooltip">CLick to view the content</div>
             </button>
             <button class="d1">
-              <div class="topic"> Coastal Pollution from Marine </div> 
+              <a href="#6">
+              <div class="topic"> Coastal Pollution from Marine </div> </a>
               <div class="d1-tooltip">CLick to view the content</div>
             </button>
-            <button class="d1">
+            <button class="d1"><a href="#7">
               <div class="topic"> Garbage Mismanagement </div>
+            </a>
               <div class="d1-tooltip">CLick to view the content</div>
             </button>
           </div>
@@ -106,20 +121,72 @@
 
     </div>
 
-    <footer>
-      <div class="footer-div">
-        <div><span>Designed by </span> S23010155 - 523593409 - J.V.G.I.E Prasad </div>
+
+      <!-- -------- About --------------- -->
+
+    <div class="about" id="about-us">
+        <div class="about-topic">About Us</div>
+        <div class="about-us au">
+          <span class="w">Welcome</span> to Combating Environmental Pollution - your trusted resource for raising awareness and promoting sustainable solutions to combat environmental degradation. At Combating Environmental Pollution, we are driven by a shared commitment to safeguarding our planet for future generations.
+        </div>
+        
+        <div class="about-details">
+          <div class="ab-details">Our mission</div>
+          <div class="mission">Our mission is to empower individuals and communities to take meaningful action against environmental pollution. Through education, advocacy, and collaboration, we strive to create a cleaner, greener, and healthier world for all.</div>
+        </div>
+
+        <div class="about-details">
+          <div class="ab-details">Our Approach</div>
+          <div class="mission">Our mission is to empower We believe in taking a proactive and holistic approach to addressing environmental challenges. By focusing on prevention, mitigation, and sustainable practices, we aim to tackle pollution at its roots and promote long-term environmental stewardship.</div>
+        </div>
+
+        <div class="about-details">
+          <div class="ab-details">What We Offer</div>
+          <div class="mission"><ul>
+            <li><span class="li-sub">Educational Resources:</span> Access informative articles, guides, and resources to learn about the causes and effects of environmental pollution, as well as practical steps you can take to make a difference.</li>
+
+            <li><span class="li-sub">Community Engagement:</span> Join a vibrant community of like-minded individuals passionate about environmental conservation. Connect, share ideas, and collaborate on initiatives to drive positive change in your local area and beyond.</li>
+
+            <li><span class="li-sub">CommunityAdvocacy and Action:</span> Get involved in advocacy efforts and campaigns aimed at influencing policy changes and promoting environmentally responsible practices in industries and governments.</li>
+          </ul></div>
+        </div>
+
+        <div class="about-details">
+          <div class="ab-details">Our Commitment</div>
+          <div class="mission">At Combating Environmental Pollution, we are committed to transparency, integrity, and inclusivity in everything we do. We strive to lead by example and inspire others to join us in our mission to protect and preserve our precious planet.</div>
+        </div>
+        <div class="mission ab">Join us in the fight against environmental pollution. Together, we can make a difference!</div>
       </div>
-    </footer>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  <!-- -------- Problems -------------- -->
 
     <div id="page2">
       <div class="page2-2">
-        <h2 class="sub-topic" id="1">Air Pollution from Vehicle Emissions</h2>
+        <h2 class="sub-topic" id="1">Water Pollution from Industrial Effluents</h2>
         <div class="details">
+          Industrial activities in Sri Lanka contribute to water pollution through the discharge of untreated or inadequately treated wastewater, known as industrial effluents, into water bodies such as rivers, lakes, and coastal areas. These effluents contain various pollutants, including heavy metals, toxic chemicals, and organic compounds, which can harm aquatic ecosystems and threaten public health.
+          <div class="details-sub-topic">Causes of Water Pollution from Industrial Effluents:</div>
+
+          <div class="sub-details">
+            <ul>
+              <li><span class="high-lighter">Untreated Discharges:</span> Many industries release wastewater directly into water bodies without proper treatment, leading to contamination.</li>
+              <li><span class="high-lighter">Weak Regulation:</span> Inadequate enforcement of environmental regulations allows some industries to pollute water sources unchecked.</li>
+              <li><span class="high-lighter">Industrial Accidents:</span> Spills and leaks from industrial facilities can release large quantities of pollutants into water bodies</li>
+              <li><span class="high-lighter">Improper Waste Management</span>: Poor handling and disposal of industrial waste, including hazardous materials, leads to water pollution via runoff and leaching into waterways.</li>
+            </ul>
+          </div>
+
 
         </div>
-        <div class="image-div">
-          <img src="images/0_5.webp" class="problem-image">
+        <div class="image-div" id="p-image">
+          <img src="pollution-images/pollution1.jpg" class="problem-image">
         </div>
       </div>
       
@@ -131,10 +198,23 @@
       <div class="page2-2">
         <h2 class="sub-topic" id="2">Air Pollution from Vehicle Emissions</h2>
         <div class="details">
+          Air pollution from vehicle emissions is a pressing environmental and public health issue in Sri Lanka, particularly in urban areas with high vehicle density. The combustion of fossil fuels in vehicles releases a variety of pollutants into the atmosphere, contributing to poor air quality and posing serious health risks to the population.
+          <div class="details-sub-topic">Causes of Water Pollution from Industrial Effluents:</div>
+
+          <div class="sub-details">
+            
+            <ul>
+              <li><span class="high-lighter">Increased Vehicle Ownership:</span> The rapid urbanization and economic development in Sri Lanka have led to a significant increase in the number of vehicles on the roads, resulting in higher emissions of pollutants.</li>
+            
+              <li><span class="high-lighter">Old and Unregulated Vehicles:</span> Many vehicles on Sri Lanka's roads are older models that may lack modern emission control technologies. Additionally, lax enforcement of emission standards allows some vehicles to operate with higher emissions than permitted.</li>
+              <li><span class="high-lighter">Traffic Congestion:</span> Urban areas face heavy traffic, causing idling and stop-and-go driving, which worsens vehicle emissions and creates localized air pollution.</li>
+            </ul>
+          </div>
 
         </div>
+        
         <div class="image-div">
-          <img src="images/0_5.webp" class="problem-image">
+          <img src="pollution-images/pollution-vehicle.jpg" class="problem-image">
         </div>
       </div>
       
@@ -143,12 +223,27 @@
     </div>
     <div id="page2">
       <div class="page2-2">
-        <h2 class="sub-topic" id="3">Air Pollution from Vehicle Emissions</h2>
+        <h2 class="sub-topic" id="3">Solid Waste Mismanagement</h2>
         <div class="details">
+          Solid waste mismanagement is a significant environmental and public health challenge in Sri Lanka, characterized by inadequate collection, disposal, and recycling of municipal and industrial waste. Improper solid waste management practices contribute to pollution of land, water, and air, posing risks to human health, ecosystems, and biodiversity.
+
+          <div class="details-sub-topic">
+            Causes of Solid Waste Mismanagement:
+          </div>
+
+          <div class="sub-details">
+            <ul><li><span class="high-lighter">Inadequate Infrastructure:</span>
+               Insufficient infrastructure for waste collection, transportation, and disposal leads to irregular and inefficient solid waste management practices in many urban and rural areas.
+            </li>
+            <li><span class="high-lighter">Lack of Awareness:</span> Limited public awareness and education about the importance of proper waste disposal and recycling contribute to littering, illegal dumping, and improper waste handling practices.</li>
+
+            <li><span class="high-lighter">Limited Recycling Facilities:</span> Inadequate facilities for recycling and composting of waste result in a low recycling rate and a high proportion of recyclable materials ending up in landfills or open dumpsites.</li>
+          </ul>
+          </div>
 
         </div>
         <div class="image-div">
-          <img src="images/0_5.webp" class="problem-image">
+          <img src="pollution-images/pollution2.jpg" class="problem-image">
         </div>
       </div>
       
@@ -157,67 +252,207 @@
     </div>
     <div id="page2">
       <div class="page2-2">
-        <h2 class="sub-topic" id="4">Air Pollution from Vehicle Emissions</h2>
+        <h2 class="sub-topic" id="4">Deforestation and Habitat Destruction</h2>
         <div class="details">
+          Deforestation and habitat destruction are significant environmental challenges in Sri Lanka, driven primarily by agricultural expansion, logging, urbanization, and infrastructure development. These activities result in the loss and degradation of forest ecosystems, leading to biodiversity loss, soil erosion, and adverse impacts on local communities and ecosystems.
 
+          <div class="details-sub-topic">
+            Causes of Deforestation and Habitat Destruction:
+          </div>
+
+          <div class="sub-details">
+            <ul>
+              <li><span class="high-lighter">Agricultural Expansion:</span> Forests converted for cash crops like tea, rubber, and palm oil, along with subsistence and commercial farming, lead to deforestation.</li>
+              
+              <li><span class="high-lighter">Logging and Timber Extraction:</span>
+                 Unsustainable logging, including illegal activities, depletes forests, causing biodiversity loss and ecosystem degradation.
+              </li>
+
+              <li><span class="high-lighter">Urbanization and Infrastructure:</span>
+                 Rapid urban growth and infrastructure projects like roads and dams encroach on forests, fragmenting habitats.
+              </li>
+
+                <li><span class="high-lighter">Illegal Activities:</span>
+                   Activities such as illegal logging and land grabbing threaten forests, undermining conservation efforts and worsening deforestation.
+                </li>
+            </ul>
+          </div>
         </div>
         <div class="image-div">
-          <img src="images/0_5.webp" class="problem-image">
+          <img src="pollution-images/pollution3.jpg" class="problem-image">
         </div>
       </div>
       
-      <a href="3"><button class="button-back-page3">Previous Page</button></a>
+      <a href="#3"><button class="button-back-page3">Previous Page</button></a>
     <a href="#5"><button class="button-next-page3">Next page</button></a>
     </div>
     <div id="page2">
       <div class="page2-2">
-        <h2 class="sub-topic" id="5">Air Pollution from Vehicle Emissions</h2>
+        <h2 class="sub-topic" id="5">Water Pollution from Agricultural Chemicals</h2>
         <div class="details">
+          Agricultural activities, particularly the use of fertilizers and pesticides, contribute significantly to water pollution. When it rains or when irrigation occurs, these chemicals can be washed off from fields into nearby water bodies, including rivers, lakes, and streams. This runoff carries various pollutants, such as nitrogen and phosphorus from fertilizers, as well as pesticides and herbicides, into the water, causing contamination.
 
+
+          <div class="details-sub-topic">
+            Causes of Water Pollution from Agricultural Chemicals:
+          </div>
+
+          <div class="sub-details">
+            <ul>
+              <li><span class="high-lighter">Runoff from Fields:</span> When it rains or during irrigation, fertilizers and pesticides applied to fields can be washed off into nearby water bodies.</li>
+              <li><span class="high-lighter">Chemical Contamination:</span> Agricultural chemicals, including nitrogen, phosphorus, pesticides, and herbicides, are carried by runoff into rivers, lakes, and streams.</li>
+              <li><span class="high-lighter">Persistence of Chemicals:</span> Some agricultural chemicals can persist in the environment for extended periods, continuing to leach into water bodies over time.</li>
+            </ul>
+          </div>
         </div>
         <div class="image-div">
-          <img src="images/0_5.webp" class="problem-image">
+          <img src="pollution-images/pollution4.jpg" class="problem-image">
         </div>
       </div>
       
-    <a href="#4"><button class="button-back-page3">Previous Page</button></a>
-    <a href="#6"><button class="button-next-page3">Next page</button></a>
+      <a href="#4"><button class="button-back-page3">Previous Page</button></a>
+      <a href="#6"><button class="button-next-page3">Next page</button></a>
     </div>
     <div id="page2">
       <div class="page2-2">
-        <h2 class="sub-topic" id="6">Air Pollution from Vehicle Emissions</h2>
+        <h2 class="sub-topic" id="6">Coastal Pollution from Marine</h2>
         <div class="details">
+          Coastal areas are vital ecosystems that support a diverse range of marine life and provide numerous benefits to human communities. However, these areas are increasingly threatened by pollution from various marine sources, posing significant risks to both the environment and public health.
 
+          <div class="details-sub-topic">
+            Causes of Coastal Pollution from Marine Sources:
+          </div>
+
+          <div class="sub-details">
+            <ul>
+              <li><span class="high-lighter">Marine Debris:</span> Coastal pollution from marine debris, including plastic waste, fishing gear, and litter, harms marine animals through entanglement, ingestion, and habitat destruction.</li>
+              <li><span class="high-lighter">Oil Spills:</span> Accidental oil spills from ships, drilling platforms, and coastal facilities severely damage coastal ecosystems by coating shorelines, suffocating marine life, and disrupting vital habitats like mangroves and coral reefs </li>
+              <li><span class="high-lighter">Pollution from industrial activities:</span> Agriculture, and sewage discharge contaminates coastal waters with heavy metals, pesticides, fertilizers, and pharmaceuticals, harming marine organisms and water quality.</li>
+            </ul>
+          </div>
         </div>
         <div class="image-div">
-          <img src="images/0_5.webp" class="problem-image">
+          <img src="pollution-images/pollution5.jpg" class="problem-image">
         </div>
       </div>
       
-      <a href="#5"><button class="button-back-page3">Previous Page</button></a>
-      <a href="#7"><button class="button-next-page3">Next page</button></a>
+        <a href="#5"><button class="button-back-page3">Previous Page</button></a>
+        <a href="#7"><button class="button-next-page3">Next page</button></a>
     </div>
     <div id="page2">
       <div class="page2-2">
-        <h2 class="sub-topic" id="7">Air Pollution from Vehicle Emissions</h2>
+        <h2 class="sub-topic" id="7">Garbage Mismanagement</h2>
         <div class="details">
+          Garbage mismanagement refers to the improper handling, disposal, and treatment of solid waste, leading to environmental pollution, health hazards, and degradation of natural ecosystems. In Sri Lanka, as in many other countries, garbage mismanagement poses significant challenges and impacts various aspects of society and the environment.
+
+          <div class="details-sub-topic">
+            Causes of Garbage Mismanagement:
+          </div>
+
+          <div class="sub-details">
+            <ul>
+              <li><span class="high-lighter">Inadequate Waste Collection Systems:</span> Many areas in Sri Lanka lack proper waste collection services, leading to the accumulation of garbage in public spaces, streets, and water bodies.</li>
+
+              <li><span class="high-lighter">Limited Recycling Infrastructure:</span> The lack of efficient recycling facilities and programs results in low rates of waste recycling and contributes to the buildup of non-biodegradable waste in landfills and the environment.</li>
+
+              <li><span class="high-lighter">Lack of Public Awareness and Education:</span> Limited awareness among the general public about the importance of proper waste management, recycling, and environmental conservation contributes to continued garbage mismanagement practices.</li>
+            </ul>
+          </div>
 
         </div>
         <div class="image-div">
-          <img src="images/0_5.webp" class="problem-image">
+          <img src="pollution-images/pollution6.jpg" class="problem-image">
         </div>
       </div>
       
-    <a href="#6"><button class="button-back-page3">Previous Page</button></a>
-  <a href="#header"><button class="button-next-page3">Back to Top</button>
+      <a href="#6"><button class="button-back-page3 lpp">Previous Page</button></a>
+      <a href="#header"><button class="button-next-page3">Back to Top</button></a>
+    </div>
+<!-- -------------------Sollutions------- -->
+
+    <div id="sollutions-page" class="sollutions-page">
+      <div class="sol">
+        <div class="sol-topic">Integrated Pollution Solutions for Sri Lanka</div>
+        <div class="sol-content">
+         <ol>
+          <li>
+            <p>Enhanced Industrial Regulations: <span> Implement stricter regulations and enforcement mechanisms to ensure industries properly treat their wastewater before discharging it into water bodies, thereby reducing water pollution from industrial effluents</span></p>
+          </li>
+          <li>
+            <p>Investment in Green Technologies: <span>Encourage industries to invest in cleaner production technologies and green infrastructure to minimize pollution emissions and promote sustainable industrial practices.</span></p>
+          </li>
+          <li>
+            <p>Promotion of Public Transportation: <span>Invest in efficient public transportation systems, promote the use of electric and hybrid vehicles, and implement vehicle emission standards to reduce air pollution from vehicle emissions</span></p>
+          </li>
+          <li>
+            <p>Waste Management Infrastructure: <span>Develop and improve waste management infrastructure, including waste collection, recycling, and disposal facilities, to mitigate solid waste mismanagement and reduce environmental pollution.</span></p>
+          </li>
+          <li>
+            <p>Reforestation and Conservation Efforts: <span>Implement reforestation projects, establish protected areas, and enforce laws against illegal logging and land clearance to combat deforestation and habitat destruction.</span></p>
+          </li>
+          <li>
+            <p>Sustainable Agricultural Practices: <span>Promote organic farming methods, reduce the use of chemical fertilizers and pesticides, and implement proper land management techniques to minimize water pollution from agricultural chemicals.</span></p>
+          </li>
+          <li>
+            <p>Coastal Protection Measures: <span>Implement coastal zone management plans, establish marine protected areas, and enforce regulations to prevent coastal pollution from marine sources and protect coastal ecosystems</span></p>
+          </li>
+          <li>
+            <p>Public Awareness and Education: <span>Conduct public awareness campaigns, environmental education programs, and community engagement initiatives to raise awareness about pollution issues and encourage sustainable practices among the population</span></p>
+          </li>
+          <li>
+            <p>Strengthened Regulatory Framework: <span>Enhance environmental laws and regulations, improve monitoring and enforcement mechanisms, and impose penalties for non-compliance to deter pollution activities and hold polluters accountable.</span></p>
+          </li>
+          <li>
+            <p>Multi-stakeholder Collaboration: <span>Foster collaboration between government agencies, industries, civil society organizations, and local communities to develop holistic solutions, share best practices, and work together towards a cleaner and healthier environment for all.</span></p>
+          </li>
+         </ol>
+          <div class="sol-last">
+            By implementing these solutions and adopting a comprehensive approach to pollution management, Sri Lanka can mitigate the adverse impacts of pollution, protect natural resources, and promote sustainable development for future generations.
+          </div>
+        </div>
+             
+      <div class="visit-button">
+        <button><a target="_blank" href="https://en.wikipedia.org/wiki/Environmental_issues_in_Sri_Lanka">Read more</button>
+        </a></div>
+      </div>
     </div>
 
+    
+    <div id="comments">
+      <div class="community-box">
+        <div class="events">
+          In conclusion, our website serves as a vital platform for addressing the urgent challenges posed by environmental pollution in Sri Lanka. By offering comprehensive information, practical solutions, and community engagement opportunities, we empower individuals, industries, and policymakers to take proactive steps towards a cleaner, greener future. Together, through collective action and shared responsibility, we can combat environmental pollution, protect our precious natural resources, and create a sustainable environment for generations to come. Let us continue to work hand in hand, inspired by the vision of a healthier planet and a brighter tomorrow.
+        <br>
+        Stay up-to-date with the latest environmental news, solutions, and community initiatives by subscribing to our page. Join our growing community of environmental advocates and receive regular updates, exclusive content, and invitations to participate in events and campaigns. Together, we can make a difference and create a healthier, more sustainable world. Subscribe now and be part of the movement for positive change
 
-  <script>
-    function toggleNavbar() {
-      const navbar = document.querySelector('.navbar');
-      navbar.classList.toggle('show');
-    }
-  </script>
+          
+        </div>
+          
+        <form class="comment-form" @submit.prevent="addComment">
+          <input class="input-box" type="text" v-model="newComment" placeholder="Give us your feed back as a comment!">
+          
+          <div class="buttons">
+            <button class="submit-button" type="submit">Add Comment</button>
+
+            <button onclick="
+            subscribe(); 
+          " class="js-subscribe-button subscribe-button"
+          >SUBSCRIBE</button>
+          </div>
+        </form>
+  
+        <ul class="comments-list">
+          <li v-for="comment in reversedComments">{{ comment }}</li>
+        </ul>
+      </div>
+
+  <footer>
+    <div class="footer-div">
+      <div><span>Designed by </span> S23010155 - 523593409 - J.V.G.I.E Prasad </div>
+    </div>
+  </footer>
+
+
+  <script src="JS/script.js"></script>
 </body>
 </html>
