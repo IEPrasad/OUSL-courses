@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>TRAFFIC SIGNAL SIMULATION</h1>
+        <div class="traffic-light">
+            <div class="light red" @click="showMessage('red')"></div>
+            <div class="light yellow" @click="showMessage('yellow')"></div>
+            <div class="light green" @click="showMessage('green')"></div>
+        </div>
+        <p>Click a traffic light to see the signal rule</p>
+        <p>{{ message }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
