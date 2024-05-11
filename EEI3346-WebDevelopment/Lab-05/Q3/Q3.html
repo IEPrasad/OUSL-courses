@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue.js Click Event Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      margin-top: 200px;
+    }
+
+    button {
+      background-color: orange;
+      color: black;
+      border: 2px solid orange;
+      cursor: pointer;
+      padding: 10px 25px;
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 25px;
+      border-radius: 60px;
+      transition: background-color 0.25s;
+    }
+    button:hover {
+      background-color: white;
+      color: orange;
+    }
+
+    p {
+      background-color: lightpink;
+      color: blue;
+      font-size: 24px;
+      font-family: sans-serif;
+      padding: 12px;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="app">
+    <button v-on:click="showMessage">Click me</button>
+    <p>{{ message }}</p>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: ''
+      },
+      methods: {
+        showMessage: function() {
+          this.message = 'Hello! This is Lab Test 05';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
