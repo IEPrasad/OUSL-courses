@@ -73,7 +73,8 @@ my_dog.bark()
 
 # ----- ^^ this is just a basic example to get you started 
 
-
+## today is no signal..
+## so .... its so bad 
 
 
 
