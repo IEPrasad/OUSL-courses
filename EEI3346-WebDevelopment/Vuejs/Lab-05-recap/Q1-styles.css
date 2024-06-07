@@ -24,5 +24,66 @@ h3 {
   margin: 20px;
 }
 
+.sub-box {
+  background-color: lightyellow;
+  padding: 25px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+}
 
+input {
+  height: 44px;
+  width: 100px;
+  padding: 8px 12px;
+  font-size: 18px;
+  font-family: sans-serif;
+} 
+
+.sub-name {
+  border: 1px solid gray;
+  padding: 8px 12px;
+  height: 44px;
+  width: 135px;
+  border-radius: 4px;
+  background-color: lightblue;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin-right: 30px;
+}
+
+.subjects {
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: rgb(231, 168, 168);
+}
+
+.total {
+  color: blue;
+  margin-bottom: 8px;
+  background-color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+.average {
+  color: saddlebrown;
+  background-color: white;
+  padding: 5px;
+  font-weight: bold;
+}
 
