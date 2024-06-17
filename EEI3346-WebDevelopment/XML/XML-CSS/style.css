@@ -1,23 +1,70 @@
+* {
+  word-break: break-all;
+}
+
 companyName {
-  margin: 100px;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid gray;
-  padding: 20px;
-
-}
-
-
-name {
-  background-color: red;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  border: 2px solid green;
-  margin: 20px;
-}
-
-age {
-  border: 2px solid blue;
-  margin: 20px;
-}
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 20px;
+  
+  }
+  
+  name {
+    background-color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    border: 2px solid green;
+    margin: 20px;
+  }
+  
+  age {
+    border: 2px solid blue;
+    margin: 20px;
+  }
+  
+  table {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    /* border: 2px solid black; */
+    margin: 40px;
+    width: fit-content;
+  }
+  
+  th {
+    border: 1px solid black;
+    display: flex;
+    padding: 4px;
+    background-color: rgb(139, 189, 139);
+    height: 60px;
+    align-items: center;
+  }
+  
+  courses {
+    width: 70px;
+  }
+  
+  duration {
+    width: 50px;
+  }
+  
+  startDate {
+    width: 70px;
+  }
+  
+  totalFees {
+    width: 90px;
+  }
+  
+  discounts {
+    width: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  
+  dipType {
+    width: 90px;
+  }
