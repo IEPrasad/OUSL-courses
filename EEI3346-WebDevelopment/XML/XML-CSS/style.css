@@ -1,0 +1,23 @@
+companyName {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  padding: 20px;
+
+}
+
+
+name {
+  background-color: red;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  border: 2px solid green;
+  margin: 20px;
+}
+
+age {
+  border: 2px solid blue;
+  margin: 20px;
+}
