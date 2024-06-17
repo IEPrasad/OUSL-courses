@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/css' href='style.css' ?>
+<!-- <companyName>
+  <age>22</age>
+  <name>IBM, Oracle, Apple, Maestro, Microsoft ...</name>
+</companyName>
+ -->
+<table>
+  <th>
+    <courses>
+      Courses
+    </courses>
+  </th>
+  <th>
+    <duration>
+      Duration
+    </duration>
+  </th>
+  <th>
+    <startDate>
+      start date
+    </startDate>
+  </th>
+  <th>
+    <totalFees>
+      Total fees
+    </totalFees>
+  </th>  
+  <th>
+    <discounts>
+      Discounts
+    </discounts>
+  </th>
+  <th>
+    <dipType>
+      Diploma/ Higher Diploma
+    </dipType>
+  </th>
+</table>
