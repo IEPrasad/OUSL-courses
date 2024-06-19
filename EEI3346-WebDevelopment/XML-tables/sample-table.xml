@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='sample-table-style.css'?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Sample XML table with html and css</title>
+
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th class='age'>Age</th>
+      <th>School</th>
+      <th>Grade</th>
+      <th>Teacher</th>
+    </tr>
+
+    <tr>
+      <td>Isuru</td>
+      <td>22 years</td>
+      <td>Matara</td>
+      <td>Grade 11</td>
+      <td>Sarath Sir</td>
+    </tr>
+
+    <tr>
+      <td>Isuru</td>
+      <td>22 years</td>
+      <td>Matara</td>
+      <td>Grade 11</td>
+      <td>Sarath Sir</td>
+    </tr>
+
+    <tr>
+      <td>Isuru</td>
+      <td>22 years</td>
+      <td>Matara</td>
+      <td>Grade 11</td>
+      <td>Sarath Sir</td>
+    </tr>  
+  </table>
+</body>
+<body>
+
+
+
