@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='sample-table2-style.css'?>
+<table>
+  <row>
+    <cell header="true">Name</cell>
+    <cell header="true">Age</cell>
+    <cell header="true">School</cell>
+    <cell header="true">Grade</cell>
+    <cell header="true">Teacher</cell>
+  </row>
+  <row>
+    <cell>Isuru</cell>
+    <cell>22 years</cell>
+    <cell>Matara</cell>
+    <cell>Grade 11</cell>
+    <cell>Sarath Sir</cell>
+  </row>
+  <row>
+    <cell>Isuru</cell>
+    <cell>22 years</cell>
+    <cell>Matara</cell>
+    <cell>Grade 11</cell>
+    <cell>Sarath Sir</cell>
+  </row>
+  <row>
+    <cell>Isuru</cell>
+    <cell>22 years</cell>
+    <cell>Matara</cell>
+    <cell>Grade 11</cell>
+    <cell>Sarath Sir</cell>
+  </row>  
+</table>
