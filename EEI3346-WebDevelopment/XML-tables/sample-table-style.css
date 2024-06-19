@@ -1,0 +1,18 @@
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  font-weight: normal;
+  border: 1px solid black;      
+}    
+
+th {
+  background-color: lightgreen;
+}
+
+.age {
+  width: 40px;
+}
+
