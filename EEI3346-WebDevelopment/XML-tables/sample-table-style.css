@@ -1,18 +1,36 @@
-
 table {
-  border: 1px solid black;
   border-collapse: collapse;
-}
-th, td {
-  font-weight: normal;
-  border: 1px solid black;      
-}    
-
-th {
-  background-color: lightgreen;
+  width: 100%;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  margin: 100px;
 }
 
-.age {
-  width: 40px;
+row {
+  display: table-row;
 }
 
+cell {
+  display: table-cell;
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+}
+
+cell[header="true"] {
+  background-color: #4eb01d;
+  font-weight: bold;
+}
+
+
+/* 
+  new css properties 
+    ** border-collapse: collapse
+    ** display: table-cell
+
+    ** cell[header="true"] {
+  
+
+    ** cell<don't put any space in there>[header="true"] 
+
+*/
