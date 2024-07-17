@@ -1,0 +1,22 @@
+<!--
+External DTD
+
+In an external DTD, the DTD is defined in a separate file, and the XML document references this file using a <!DOCTYPE> declaration with a SYSTEM identifier.
+
+First, create an external DTD file named note.dtd:
+-->
+
+<!ELEMENT note (to,from,heading,body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+</note>
