@@ -1,0 +1,65 @@
+// Internal DTD
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note [
+<!ELEMENT note (name, to, from, heading, body)>
+<!ELEMENT name (fname, lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+]>
+<note>
+    <name>
+        <fname>Jhon</fname>
+        <lname>Doe</lname>
+    </name>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+</note>
+
+// ---------------
+
+// External DTD
+
+<!ELEMENT note (name, to, from, heading, body)>
+<!ELEMENT name (fname, lname)>
+<!ELEMENT fname (#PCDATA)>
+<!ELEMENT lname (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+
+// reference this DTD in your XML document:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+    <name>
+        <fname>Jhon</fname>
+        <lname>Doe</lname>
+    </name>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+</note>
+
+
+
+
+
+
+
+
+
+
+
+
+  
