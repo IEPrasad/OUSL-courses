@@ -1,7 +1,8 @@
 <!--
 External DTD
 
-In an external DTD, the DTD is defined in a separate file, and the XML document references this file using a <!DOCTYPE> declaration with a SYSTEM identifier.
+In an external DTD, the DTD is defined in a separate file, and the XML document references 
+this file using a <!DOCTYPE> declaration with a SYSTEM identifier.
 
 First, create an external DTD file named note.dtd:
 -->
