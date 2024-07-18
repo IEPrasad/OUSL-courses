@@ -41,8 +41,24 @@ First, create an external DTD file named note.dtd:
 	</address>
 </school>
 
+<!-- Internal DTD file for this detail -->
 
-DTD file for this detail
+
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE school [
+<!ELEMENT school(grade, name, age, address)>
+<!ELEMENT grade(#PCDATA)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT age(#PCDATA)>
+<!ELEMENT address(fline, sline, tline)>
+<!ELEMENT fline(#PCDATA)>
+<!ELEMENT sline(#PCDATA)>
+<!ELEMENT tline(#PCDATA)>
+]>
+
+
+
+<!-- External DTD file for this detail -->
 
 <!ELEMENT school (grade, name, age, address)>
 <!ELEMENT grade (#PCDATA)>
