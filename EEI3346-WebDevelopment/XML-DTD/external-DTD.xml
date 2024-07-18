@@ -21,3 +21,34 @@ First, create an external DTD file named note.dtd:
     <heading>Reminder</heading>
     <body>Don't forget me this weekend!</body>
 </note>
+
+
+<!-- another sample code -->
+
+// External DTD
+
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE school SYSTEM 'school.dtd'>
+
+<school>
+	<grade>10</grade>
+	<name>Sadew</name>
+	<age>15</age>
+	<address>
+		<fline>37/27</fline>
+		<sline>Delkada Road</sline>
+		<tline>Matara</tline>
+	</address>
+</school>
+
+
+DTD file for this detail
+
+<!ELEMENT school (grade, name, age, address)>
+<!ELEMENT grade (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT address (fline, sline, tline)>
+<!ELEMENT fline (#PCDATA)>
+<!ELEMENT sline (#PCDATA)>
+<!ELEMENT tline (#PCDATA)>
