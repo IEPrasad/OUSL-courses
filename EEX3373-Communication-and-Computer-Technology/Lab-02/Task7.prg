@@ -10,18 +10,19 @@ Draw a flowchart to show the algorithm of the assembly program (accumulator-base
 architecture) to perform the above task.
 Write an assembly language program to the above function and simulate the program in SEPSim.
 
-loadacc #3
+loadacc #5
 storeacc 0x80
 loadacc #5
-storeacc 0x81
-loadacc 0x80
-sub 0x81
+sub 0x80
 loadacc #9
 js
-loadacc #3
-jz
-loadacc 0x80
-inc 
-loadacc 0x81
-inc 
+loadacc 0x83
+inc
 nop
+loadacc #9
+jz
+loadacc 0x82
+inc
+nop
+
+// This is also not permenetly sure code !
