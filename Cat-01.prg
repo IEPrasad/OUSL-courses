@@ -16,3 +16,6 @@ nop
 loadacc #7
 storeacc 0x82
 nop
+
+Check this code with SEPSIM 
+whether this is working correctly or not !
