@@ -1,0 +1,36 @@
+22/23 Year
+
+QUESTION 1
+
+Read the following description of E-Channeling System and answer the parts of QUESTION
+
+1.
+Patients and doctors can create their accounts and login to the system. Patients can browse
+through the list of available doctors and view their profiles, which include information
+about their specialties, experience, and availability. Patients can book an appointment
+with a doctor and select a convenient date and time. Doctors can view and confirm the
+received appointment requests from patients. Doctors can update the status of the
+appointment from "booked" to "in progress" when they start the appointment. Doctors can
+also update the status of the appointment to "completed" when the appointment is
+finished. Patients can track the status of their appointment in real-time. Patients can pay
+for their appointment through the system.
+
+1.1) Draw a flow chart for the algorithm based on the description. (10 marks)
+
+1.2) The above E-Channeling System has to calculate payment for daily paid doctors
+who are working in the E-Channeling system according to the following method.
+
+The user has to input the number of doctors, rate per hour, doctor ID, hours worked per
+week to compute the gross pay of a doctor.
+Pay should be at the normal rate for up to 28 hours per week and double the hourly rate
+for all hours worked beyond 28 hours.
+Design a function called calPay() to calculate the payment and returns the value.
+Inputs should be positive numbers, otherwise the program should display an error
+message.
+After weekly pay is calculated, the Doctor ID and the amount need to be paid should be
+written to a Text file.
+
+
+Write a C code to implement the above program including header files, main function, inputs,
+outputs, iteration and conditional structures. Include comments where necessary. Give
+meaningful names to variables. (15 marks)
