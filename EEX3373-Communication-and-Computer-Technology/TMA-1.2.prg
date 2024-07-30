@@ -14,4 +14,49 @@ it in 0x91 memory location.
 
 
 write a ALP for this task ! 
-(it's literally hard, but try to do this how ever !)
+(it's literally hard, but try to do this however !)
+
+
+loadacc #6 // acc = 6
+storeacc 0x75 // 
+inc // acc = 7
+storeacc 0x76
+inc // acc = 8
+storeacc 0x77
+inc // acc = 9
+storeacc 0x78 
+inc // acc = 10
+storeacc 0x79
+
+add 0x75 // acc = 10 + 6 = 16
+add 0x76 // acc = 16 + 7 = 23
+add 0x77 // acc = 23 + 8 = 31
+add 0x78 // acc = 31 + 9 = 40
+
+storeacc 0x87 
+div #5
+storeacc 0x88
+
+loadacc #2
+sub 0x88
+
+loadacc #24
+jz
+loadacc #9
+js
+loaddacc #0 // third digit store if L > avg (+)
+storeacc 0x92
+nop
+
+loadacc #3
+storeacc 0x91 // second digit store if L < avg (-)
+nop
+
+loadacc #2 // first digit store if L = avg (0)
+storeacc 0x90
+nop
+
+
+as I understand this is the code 
+but I'm not sure, because there is another code called looz, this operand use for the loops 
+so I think if we can use this looz keyword, we can make this code more easier ....!
