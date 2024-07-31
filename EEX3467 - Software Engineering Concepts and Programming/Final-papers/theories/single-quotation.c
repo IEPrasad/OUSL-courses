@@ -24,6 +24,13 @@ int main() {
     return 0;
 }
 
+/*
+The output of this code:
+>>>
+Character: A
+ASCII Value: 65
+*/
+
 
 In this example:
 
