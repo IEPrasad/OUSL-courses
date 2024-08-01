@@ -65,3 +65,16 @@ double calPay(int rate_per_hour, int hours_worked) {
     }
     return pay;
 }
+
+Explanation:
+
+    Function Prototype: double calPay(int rate_per_hour, int hours_worked); declares the calPay function.
+    Input Validation: The program checks if the inputs are positive numbers and displays an error message if they are not.
+    File Handling: The program writes the Doctor ID and the calculated pay to a text file named doctor_pay.txt.
+    Function Definition: The calPay function calculates the pay based on the provided criteria (normal rate for up to 28 hours and double rate for hours beyond 28).
+
+
+
+
+    
+
