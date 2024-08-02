@@ -1,0 +1,46 @@
+* {
+  font-family: sans-serif;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  padding: 4%;
+  align-items: center;
+  justify-content: center;
+}
+
+.topic {
+  color: rgba(255, 255, 255, 0.882);
+  font-family: sans-serif;
+  font-size: 25px; 
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  padding: 13px;
+  background-color: rgba(211, 211, 211, 0.208);
+  width: 240px;
+  margin-top: 30px;
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 12px 12px 12px;
+}
+
+.inputs div {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.882);
+  width: 65px;
+}
+
+input {
+  background-color: white;
+  padding-left: 6px;
+  font-size: 11px;
+  border: none;
+}
