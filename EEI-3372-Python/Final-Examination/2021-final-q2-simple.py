@@ -24,3 +24,22 @@ while True:
         break
     else:
         print("Incorrect guess. Please try again.")
+# This is not fully correct 
+# here is the correct code 
+
+
+hidden_value = 6
+
+while True:
+  guess_value = int(input("Enter value between 1-30: "))
+
+  if (guess_value < 1 or guess_value > 30):
+    print("Error!, please enter value between 1-30")
+  elif (guess_value == hidden_value):
+    print("You win the game!")
+    break
+  else:
+    print("Try again!")
+    # continue
+      
+  # This is the correct code !
