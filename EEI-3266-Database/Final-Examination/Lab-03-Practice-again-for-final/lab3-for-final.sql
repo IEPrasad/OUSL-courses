@@ -31,3 +31,30 @@ VALUES ("E002", "Johnson", "Sales Manager", 60000, "Sales", "2021-05-18"),
 ("E005", "Jacqueline", "Sales Rep", 40000, "Sales", "2022-06-01"),
 ("E007", "Michael", "Mechanic", 50000, "Maintenance", "2022-04-01");
 
+CREATE TABLE Sales (
+	sale_id VARCHAR(10) PRIMARY KEY,
+	sale_date DATE,
+	sale_amount INT,
+	employee_id VARCHAR(10),
+	car_id VARCHAR(10)
+);
+
+INSERT DATA Sales (sale_id, sale_date, sale_amount, employee_id, car_id) 
+VALUES ("S1", "2021-04-02", 1300000, "E005", "C1"),
+("S2", "2021-03-10", 2000000, "E005", "C2"),
+("S3", "2023-07-19", 3200000, "E002", "C3");
+
+CREATE TABLE Dependents (
+	dependent_id VARCHAR(10) PRIMARY KEY,
+	depen_name VARCHAR(40),
+	depen_relation VARCHAR(40),
+	depen_dob DATE,
+	depen_gender VARCHAR(20),
+	employee_id VARCHAR(10)
+);
+
+INSERT DATA Dependents (dependent_id, depen_name, depen_relation, depen_gender, employee_id) 
+VALUES ("D1", "Mary", "Spouse", "1995-07-13", "Female", "E002"),
+("D2", "Sarah", "Child", "2024-03-10", "Female", "E002"),
+("D3", "Sophia", "Child", "2022-07-10", "Female", "E005"),
+("D4", "David", "Spouse", "1991-10-01", "Male", "E007");
