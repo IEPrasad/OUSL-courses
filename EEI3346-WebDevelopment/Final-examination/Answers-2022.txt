@@ -1,0 +1,86 @@
+Web development typically follows several stages. Here are the main stages:
+1. Planning
+
+    Objective Definition: Define the purpose and goals of the website.
+    Requirements Gathering: Identify the target audience and their needs.
+    Scope Definition: Determine the features and functionalities.
+    Resource Allocation: Identify the development cost and resources required (developers, designers, tools, etc.).
+    Timeline Establishment: Set milestones and deadlines.
+
+2. Design
+
+    Wireframing: Create basic layouts to show structure and navigation.
+    Mockups: Develop detailed designs with colors, fonts, and graphics.
+    User Experience (UX): Focus on the overall user experience, ensuring ease of use and accessibility.
+    User Interface (UI): Design the visual elements of the application.
+
+3. Development
+
+    Front-end Development: Coding the user-facing part of the website using HTML, CSS, JavaScript, and relevant frameworks.
+    Back-end Development: Building the server-side logic, database interactions, and APIs.
+    Integration: Connecting the front-end and back-end, integrating third-party services and APIs.
+
+4. Testing
+
+    Functional Testing: Ensure all features work as intended.
+    Usability Testing: Evaluate the site's ease of use and user experience.
+    Performance Testing: Check the site's speed, load times, and responsiveness.
+    Security Testing: Identify and fix vulnerabilities.
+
+5. Deployment
+
+    Server Setup: Configure the web server and environment.
+    Domain Configuration: Set up the domain name and DNS settings.
+    Launch: Make the website live and accessible to users.
+
+6. Maintenance and Updates
+
+    Bug Fixes: Address any issues that arise post-launch.
+    Performance Monitoring: Continuously monitor and optimize performance.
+    Content Updates: Regularly update content to keep the site relevant.
+    Feature Enhancements: Add new features and functionalities as needed.
+
+
+1- Differentiate the terms Internet and Web.
+    
+    ** Internet is the global network of interconnected computers and servers that 
+       Communicate using standardized protocols (like TCP/IP).
+
+    ** The Web is a system of interlinked hypertext documents and multimedia content 
+       accessed via the internet using web browsers.
+
+
+2- An effective process model based on Software Engineering principles can help
+   to follow a systematic approach especially for a website populated by
+   framework activities.
+
+   ** An effective process model in web engineering involves stages
+   like requirement analysis, planing, design, implementation, 
+   testing, deployment, and maintenance. This systematic approach 
+   ensures user requirements are met, project timelines and 
+   resources are managed, high-quality code is maintained, and the
+   website is continuously improved for better performance and 
+   user satisfaction. 
+
+
+
+( An external: 
+
+    Agile model
+        ** The agile process model encourages continuous iterations 
+        of development and testing. Each incremental part is 
+        developed over an iteration, and each iteration is designed
+        to be small and manageable so it can be completed within 
+        a few weeks.
+)
+
+3- Client-Server Architecture:
+    
+    ** The client-server architecture involves clients (devices/
+    software) requesting services/resources from servers (powerful 
+    computers). Client initiate requests (e.g. HTTP), servers process
+    these requests, generate responses, and send them back. This 
+    model supports centralized resource management, scalability, 
+    maintenance, and security, crucial for the functionality of the 
+    World Wide Web.
+
