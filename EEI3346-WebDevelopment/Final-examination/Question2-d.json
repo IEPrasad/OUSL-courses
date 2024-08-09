@@ -1,0 +1,50 @@
+
+{
+  "ColleageForm" : {
+    "Student" : {
+      "FirstName" : "Isuru",
+      "LastName" : "Prasad",
+      "Age" : "22",
+      "College" : "OUSL",
+      "Course" : "BSE",
+      "Branch" : "Matara",
+      "EmailId" : "ieparasad23@gmail.com"
+    }
+  }
+}
+
+// vvvv This is for the practice vvvv
+
+{
+  "SchoolDetails" : {
+    "Students" : {
+      "Student1" : {
+        "Name" : "Alice Perera",
+        "Age" : "32",
+        "Grade" : "No Grade",
+        "Gender" : "Female"
+      },
+      "Student2" : {
+        "Name" : "Kamal Nishantha",
+        "Age" : "18",
+        "Grade" : "13",
+        "Gender" : "Male"
+      }
+    },
+    "Teachers" : {
+      "Teacher1" : {
+        "Name" : "Karunarathne",
+        "Age" : "34",
+        "Subject" : "Maths",
+        "Gender" : "Male"
+      },
+      "Teacher2" : {
+        "Name" : "Chandrika",
+        "Age" : "45",
+        "Subject" : "English",
+        "Gender" : "Female"
+      }
+    } 
+  }
+}
+
