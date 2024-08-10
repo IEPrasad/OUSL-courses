@@ -1,0 +1,139 @@
+Question 2
+
+a) Web application have gradually evolved from static to dynamic nature keeping 
+in view the needs of the potential users and advancement in technology. It is 
+important to follow a systemic approach for the development of websites. 
+	List the main phases of the Web engineering process model 
+
+		** Planning 
+		** Design 
+		** Development 
+		** Testing 
+		** Deployment 
+		** Maintenance and updating 
+
+b) What is the difference between frontend and backend web development ?
+	
+	** Front-End
+		-- Focuses on the user interface and experience, using 
+		HTMLm CSS and JavaScript to create visually appealing 
+		and interactive elements.
+
+	** Back-End 
+		-- Handles server-side logic, database, and application 
+		functionality, using languages like PHP, Python, and 
+		others to mange data and server communication. 
+
+
+c) i) Explain the term, Computer Network?	
+   ii) List some advantages and disadvantages of using Fiber 
+   Optic cable?
+
+   i) ** Computer Network:
+   A system of interconnected devices that communicate and 
+   share resources, such as data and hardware, using wired or 
+   wireless connections.
+
+
+   ii) ** Fiber Optic Cable:
+
+  	Advantages:
+  		** High speed and bandwidth
+  		** Long-distance transmission without signal loss
+  		** Immune to electromagnetic interference. 
+
+  	Disadvantages:
+  		** Expensive to install 
+  		** Fragile and difficult to repair
+  		** Complex installation process 
+
+
+d) i) Explain how does a Web browser work?
+   ii) What is HTTP? Briefly explain the anatomy of HTTP?
+
+i) How a Web Browser Works:
+
+** A web browser sends a request to a server for a specific 
+webpage. The server process this request and sends back the 
+webpage data, which the browser then displays to the user. 
+
+
+ii) What is HTTPS?:
+	
+	HTTP (Hyper Transfer Protocol) is a used for transferring 
+	web pages over the internet. It operates through requests
+	(from the client) and responses (from the server). The
+	anatomy of HTTP includes methods (like GET, POST), headers
+	(metadata about the request/response), and the body 
+	(content being transferred).
+
+
+	briefly ---->>
+
+	i) Web Browser: Sends a request to a server and displays 
+	the webpage returned.
+
+	ii) HTTP: A protocol for transferring web pages, using 
+	requests (like GET, HEAD, POST) and responses between 
+	client and server.
+
+
+
+** Internet is global network of interconnected computers and 
+servers that communicate using standardized protocols. 
+like (TCP/ IP).
+
+
+------------
+
+Question 3)
+
+a) Explain the use of HTML, CSS, JavaScript and their importance
+in web development.
+
+	** HTML - Defines the structure and content of a webpage,
+	including elements like headings, paragraphs, tables, and 
+	images.
+
+	** CSS - Style the webpage, controlling layout, colors, 
+	fonts, and overall visual appearance to make it attractive.
+
+	** JavaScript - Adds interactivity and dynamic behavior to
+	the webpage, enabling functions like form validation, 
+	animation, and real-time updates.
+
+
+b) Briefly explain the key responsibilities of a Web Developer?
+
+	** Building and maintaining websites.
+	** Writing, testing, and debugging code.
+	** Optimizing website performance.
+	** Collaborate with designers and stakeholders.
+
+c) In which stage do you use XML in web development?
+	
+	** XML is used in the "Development" stage or data 
+	exchange and configuration. It may also be used during 
+	"Maintenance" for updates and modifications.
+
+
+d) Mention some tips you can use to reduce the load time of a 
+web application that you have written ?
+
+	** Optimize Images
+	** Minify Code 
+	** Use Caching: Store frequently accessed data loacally.
+	** Enable Compression 
+	** Reduce HTTP Requests: Combine files and use CSS sprites.
+	** Implement Lazy Loading: Load images and content only 
+	when needed.
+
+
+e) List two(2) latest web development tools you can use?
+	
+	** VS Code: Lightweight code editor with extensions and 
+	debugging. 
+	** Webpack: JavaScripit bundler for optimizing assets.
+
+
+f) 
