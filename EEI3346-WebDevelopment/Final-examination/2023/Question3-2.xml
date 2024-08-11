@@ -1,0 +1,25 @@
+<Data>
+  <library>
+    <book>
+      <title>Intelligent XML Search</title>
+      <editor>Henk A. Blanken et al </editor>
+      <publisher>Springer Verlag</publisher>
+    </book>
+
+    <journal>
+      <title>ACM Transactions on Databases</title>
+      <volume>
+        <text>24</text>
+        <number>1</number>
+      </volume>
+    </journal>
+
+    <misc>
+      <author>U Known</author>
+      <title>The Diploma thesis that didn't appear</title>
+      <year>2002</year>
+      <pages>0</pages>
+    </misc>
+
+  </library>
+</Data>
