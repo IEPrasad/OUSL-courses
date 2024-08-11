@@ -1,0 +1,393 @@
+Question 01 (Marks 25)
+1.
+Web programming is sometimes called scripting. Explain the two 
+broad categories of scripting with suitable examples. [04 Marks]
+
+2
+. Explain why you must consider Copy Rights and Privacy 
+Policies while working with web development and list at least 
+two (02) disadvantages that may occur when you do not follow 
+those rules. [06 Marks]
+
+3. Hypertext is an electronic document where contents are 
+connected using hyperlinks.
+Explain how Hypertext documents function with suitable diagrams.
+[05 Marks]
+
+
+4.
+Explain the Open Systems Interconnection Model (OSI) and why it's important for networking. [05 Marks]
+
+5
+. Web security is important to keep hackers and cyber thieves 
+from accessing sensitive information. Describe what is SQL 
+injection and how to prevent it.
+
+[05 Marks]
+
+
+1- ** Web programming, also known as scripting, can be divided into two broad categories: Client-side scripting and Server-side scripting.
+
+    Client-side scripting: This type of scripting runs on the user's browser. It is primarily used to create interactive features on web pages, like form validation, animations, and dynamic content updates without reloading the page. An example is JavaScript, which is widely used for tasks like form validation and manipulating the Document Object Model (DOM).
+
+    Server-side scripting: This scripting runs on the server and is used to manage data and handle the backend of a website. It can interact with databases, manage sessions, and control access to resources. Examples include PHP, which is used for creating dynamic web pages, and Python with frameworks like Django or Flask for web development.
+
+
+
+2 ** 2. Importance of Copyrights and Privacy Policies:
+
+When working in web development, considering Copyrights and Privacy Policies is essential:
+
+    Copyrights protect the original content created by others, such as images, text, and software. If you use copyrighted materials without permission, you could face legal action, including fines or your website being taken down.
+
+    Privacy Policies ensure that users' personal data is collected, stored, and used in a way that complies with regulations like GDPR. If you don't follow these rules, you could face legal penalties and damage to your reputation.
+
+Disadvantages of not following these rules:
+
+    Legal consequences: You could be sued for violating copyright laws or privacy regulations.
+    Loss of user trust: Users may avoid your site if they feel their privacy is not protected or if they notice unlicensed use of content.
+
+
+
+3. ** 3. Hypertext Documents:
+
+Hypertext is a system where electronic documents are connected through hyperlinks. Each hyperlink can lead to another document, allowing users to navigate between different pieces of content seamlessly.
+
+How it works:
+
+    Structure: A hypertext document typically includes text, images, and links. When a user clicks on a link, the browser sends a request to the server to retrieve the linked document.
+
+    Functionality: For example, in an HTML document, hyperlinks are created using the <a> tag, and when clicked, they direct the user to another page or section within the same document. This creates a web of interconnected documents, enhancing the user's ability to access related information quickly.
+
+
+
+4. ** 4. Open Systems Interconnection Model (OSI):
+
+The OSI Model is a conceptual framework used to understand and implement networking protocols. It divides the process of network communication into seven distinct layers:
+
+    >> Physical Layer: Deals with the physical connection between devices.
+    
+    >> Data Link Layer: Ensures data transfer between two devices on the same network.
+    
+    >> Network Layer: Manages data routing and forwarding.
+    
+    >> Transport Layer: Ensures reliable data transfer.
+    
+    >> Session Layer: Manages sessions or connections between applications.
+    
+    >> Presentation Layer: Translates data formats and encrypts/decrypts information.
+    
+    >> Application Layer: Provides network services directly to the end-user applications.
+
+Importance:
+
+    It standardizes network communication and allows different systems to communicate with each other efficiently.
+    Helps in troubleshooting by isolating issues to a specific layer.
+
+
+5. ** 5. SQL Injection and Its Prevention:
+
+SQL Injection is a type of web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. By inserting malicious SQL code into an input field, an attacker can access, modify, or delete database content.
+
+Prevention Methods:
+
+    Parameterized Queries: Use prepared statements with parameterized queries, which ensures that user input is treated as data and not executable code.
+    Input Validation: Validate and sanitize user inputs to prevent the execution of harmful SQL code.
+
+
+
+   ------------------------------------------
+
+
+   Answers for the first question in briefly 
+
+1. Categories of Scripting:
+
+    Client-side scripting: Runs on the user's browser (e.g., JavaScript). Used for interactive features like form validation.
+    Server-side scripting: Runs on the server (e.g., PHP). Manages data and backend processes.
+
+2. Importance of Copyrights and Privacy Policies:
+
+    Copyrights: Protects original content. Violations can lead to legal issues.
+    Privacy Policies: Ensure user data is handled legally. Non-compliance can result in penalties.
+
+Disadvantages:
+
+    Legal consequences.
+    Loss of user trust.
+
+3. Hypertext Documents:
+
+    Hypertext: Electronic documents connected via hyperlinks.
+    Functionality: Links in HTML (<a> tag) connect to other documents or sections, enabling easy navigation.
+
+4. OSI Model:
+
+    OSI Model: 7 layers that standardize network communication, from Physical (Layer 1) to Application (Layer 7).
+    Importance: Ensures efficient communication and helps with troubleshooting.
+
+5. SQL Injection and Prevention:
+
+    SQL Injection: A security flaw where attackers inject malicious SQL into queries.
+    Prevention: Use parameterized queries and input validation.
+
+
+
+-----------------------
+
+
+Question 02 (Marks 20)
+
+
+1. Explore how web hosting services enable individuals and organizations to make their websites accessible to users worldwide [06 Marks]
+
+2. Explore how domain names serve as unique identifiers for websites and play a crucial role in branding, credibility, and memorability
+[06 Marks]
+
+3. Explore the various HTTP methods (GET, POST, PUT, DELETE, etc.) and their purposes in web communication.
+[08 Marks]
+
+
+
+
+1. Web Hosting Services:
+	** Web hosting services store website files on servers, 
+	making them accessible on the internet.
+
+	** they provide the necessary infrastructure, such as 
+	storage bandwidth, and security, to ensure website are 
+	available to users globally.
+
+2. Domain Names:
+	** Domain names are unique website addresses that simplify 
+	access and contribute to branding.
+
+	** They enhance a website's credibility and are easier for 
+	users to remember compared to IP addresses.
+
+3. HTTP Methods:
+
+	GET: Retrieves data from a server.
+	POST: Submits data to a server for processing.
+	PUT: Updates existing resources on a server.
+	Delete: Removes resources from a server.
+
+
+-------------------------
+
+Question 03 
+
+1. Using JavaScript Loop (for/ while) write a program the
+counts of even numbers when the starting and ending are given 
+by the user. (Ex: Start No: 1, End No: 8, Counts of Even 
+number: 4)
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Question 3-1</title>
+</head>
+<body>
+  <script>
+    let StartNo = parseInt(prompt("Start No:"));
+    let EndNo = parseInt(prompt("End No:"));
+    let count = 0;
+
+    for (let i = StartNo; i <= EndNo; i++) {
+      if (i % 2 == 0) {
+        count += 1;
+      }
+    }
+
+    console.log(`Counts of Even Number:${count}`);
+
+  </script>
+</body>
+</html>
+
+
+2. 
+
+{
+  "library" : {
+    "book" : {
+      "title" : "Intelligent XML Search",
+      "editor" : "Henk A. Blanken et al",
+      "publisher" : "Springer Verlag" 
+    },
+    "journal" : {
+      "title" : "ACM Transactions on Databases",
+      "volume" : {
+        "#text" : "24",
+        "number" : 1
+      }
+    },
+    "misc" : {
+      "author" : "U Known",
+      "title" : "The Diploma thesis that didn't appear",
+      "year" : 2002,
+      "pages" : 0
+    }
+  }
+}
+
+--- XML code for this code ---
+
+
+<Data>
+  <library>
+    <book>
+      <title>Intelligent XML Search</title>
+      <editor>Henk A. Blanken et al </editor>
+      <publisher>Springer Verlag</publisher>
+    </book>
+
+    <journal>
+      <title>ACM Transactions on Databases</title>
+      <volume>
+        <text>24</text>
+        <number>1</number>
+      </volume>
+    </journal>
+
+    <misc>
+      <author>U Known</author>
+      <title>The Diploma thesis that didn't appear</title>
+      <year>2002</year>
+      <pages>0</pages>
+    </misc>
+
+  </library>
+</Data>
+
+
+3. Answer the following questions
+	a) Briefly explain the advantages of E-commerce revived by 
+	customer and Organizations.
+
+	b) Cloud computing is a way of providing shared computing 
+	resources. List four (4) key features of cloud computing.
+
+	c) Mention four (04) tips to reduce the load time of a
+	web application you have written.
+
+
+	a) E-commerce advantages 
+
+		--- For customers -----
+		
+		1. Convenience -shop anytime, anywhere
+		
+		2. Wider Selection: Access to a global range of 
+		products.
+
+		3. Price Comparison -Easily compare prices across 
+		multiple vendors.
+		
+		4. Personalization: Tailored product recommendations 
+		and promotions.
+
+		--- For Organizations ---- 
+
+		1. Increased reach:  Access to a global customer base.
+
+		2. Lower Costs: Reduced overhead compared to physical 
+		stores.
+
+		3. Data Insights: Detailed customer behavior tracking 
+		and analytics.
+
+		4. Scalability: Easily scale operations up or down 
+		based on demand.
+
+
+
+	b) Key features of Cloud computing 
+		** On-Demand Self-service
+		** Broad network access 
+		** Resource Pooling
+		** Scalability and Elasticity 
+		** Measured service
+
+	c) How to reduce load time of a webpage 
+	 	** Optimize file size
+	 	** Use caching 
+	 	** Reduce HTTP requests
+	 	** Enable compression 
+	 	** Implement lazy loading 
+	 	** Minify code
+	 	** Use content Delivery Networks (CDNs)
+
+
+---------------------
+
+
+Question 4.
+
+1. Write an HTML snippet to create the given form with the 
+information shown below. Both headings should be in Dark blue
+and the form background in Grey.
+
+
+2. Clearly explain the Element selector, Class selector,
+and ID selector with suitable examples.
+
+	
+	** Element Selector: Targets all elements of a specific
+	   type in HTML
+
+	 Example: `P {color: blue;} ` (Applies blue color to all
+	`<p>` tags).
+
+	** Class Selector: Targets elements with a specific class
+	   attributes.
+
+	 Example: `.highlight {background-color: yellow;` (Applies 
+	 yellow background to all elements with class "highlight").
+
+
+	 ** ID Selector: Targets a single element with a specific 
+	 ID attribute.
+
+	 Example: `#header {font-size: 24px}` (Applies 24px font size to the element with ID "header").
+
+
+	 	** key point words
+	 		** All specific type elements 
+	 		** Specific class attributes
+	 		** Target single element specific ID attribute
+
+
+
+3. Write a VueJs function to display the grades for the given 
+	marks. (User need to enter the marks, marks 80 and above 
+	- 80 grade A, marks between 65 and 79 - grade B, marks
+	between 50 and 64 - grade C, marks <= 49 - grade R)
+
+4. Discuss how Vue.js, as a front-end framework, can enhance 
+	the user experience and interactivity of SAP applications
+
+
+	** Dynamic Interfaces: Enables creation of reactive, 
+	real-time updating components.
+
+	** Two-Way Data Binding: Synchronize UI and data model
+	instantly for better interactivity. 
+
+	** Component-Based Architecture: Organizes complex UIs into
+	modular, maintainable components.
+
+	** Improved User Experience: Enhance responsiveness and 
+	overall user-friendliness of the application.
+
+	
+
+
+
+
+
+
+
+
