@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Question 3-1</title>
+</head>
+<body>
+  <script>
+    let StartNo = parseInt(prompt("Start No:"));
+    let EndNo = parseInt(prompt("End No:"));
+    let count = 0;
+
+    for (let i = StartNo; i <= EndNo; i++) {
+      if (i % 2 == 0) {
+        count += 1;
+      }
+    }
+
+    console.log(`Counts of Even Number:${count}`);
+
+  </script>
+</body>
+</html>
