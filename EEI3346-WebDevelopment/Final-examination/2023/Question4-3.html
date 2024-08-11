@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Question 4-3</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+  <h4>VueJs function to display the grades for the given marks.</h4>
+
+  <div id="app">
+    <P v-if="marks >= 80">Grade A</P>
+    <p v-else-if="marks >= 65 && marks <= 79">Grade B</p>
+    <p v-else-if="marks >= 50 && marks <= 64">Grade C</p>
+    <p v-else-if="marks <= 49">Grade R</p>
+  </div>
+
+  <script>
+    new Vue({
+      el : "#app",
+      data : {
+        marks : 85
+      }
+    })
+  </script>
+</body>
+</html>
