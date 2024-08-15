@@ -1,0 +1,174 @@
+
+
+### Python Programming Concepts
+1. **Features of Python Programming Language**
+   - Briefly explain 3 features of Python.
+   
+2. **Control Structures**
+   - Explain the difference between `break`, `continue`, and `pass`.
+   - Remove number 9 from list A.
+   - Remove all items from list B.
+   - Add number 11 and 13 to the list A.
+   - Replace “i” in list B with “m”.
+   - Replace items in list A with items in list C.
+   - Remove all items from list B.
+   
+3. **Loops and Iteration**
+   - `while` loop example: 
+     ```python
+     while False:
+         if a % 2 == 0:
+             break
+         print(a)
+     ```
+   - Use `range` function to print values from 2-12.
+   - Display all numbers from 1 - 20 except 13, 17, and 19.
+   - Write a snippet using the `range` function to print values from 6 – 12.
+   
+4. **Strings and Lists**
+   - String slicing in Python with examples.
+   - Accessing tuple values:
+     - Write a snippet to access the value 4 in tuple `B = ("OUSL", [20, 30, 40], (2, 4, 6))`.
+   - String method example: `print(a.upper())`.
+   - Indexing and slicing examples:
+     - `characters[start:]`, `characters[:]`, `characters[-1]`, `characters[-2:]`, `characters[:end]`, `characters[:-2]`.
+
+### Data Structures
+1. **Mutable vs Immutable**
+   - Difference between mutable and immutable objects.
+   
+2. **Tuples and Dictionaries**
+   - Indexing in tuples.
+   - What are dictionaries in Python?
+   
+3. **Inheritance and Polymorphism**
+   - Explain multiple inheritance in Python using examples.
+   - Write a program that demonstrates inheritance and polymorphism.
+   - Write a base class and derived classes.
+   - Create an instance of a specific class.
+
+### Functions and Methods
+1. **Functions in Python**
+   - Two advantages of using functions in Python.
+   - Explain the `return` statement in Python.
+   - List three types of arguments used in Python.
+   - Explain the difference between overriding and overloading.
+
+2. **Lambda Functions**
+   - What is a Lambda function in Python? Write key characteristics of Lambda functions.
+
+3. **Math Functions**
+   - Name two math functions in Python.
+
+### Errors and Exceptions
+1. **Types of Errors**
+   - Difference between semantic errors, syntax errors, and runtime errors.
+   - Difference between compiler and interpreter.
+   - Difference between `.py` and `.pyc` files in Python.
+
+2. **Handling Exceptions**
+   - What is an exception?
+   - Explain and handle the `ZeroDivisionError` with an example.
+   - Example of multiple `except` blocks (e.g., handling `ZeroDivisionError` and `NameError`).
+
+### Software Testing
+1. **Testing Concepts**
+   - What is Alpha testing in software testing?
+   - Explain briefly Alpha testing and Beta testing.
+   - Two factors or occasions where a runtime error can occur in a program.
+
+### Miscellaneous
+1. **Source Code and Algorithms**
+   - Briefly explain the following: Debugging, Source Code, and Algorithm.
+
+2. **Variables**
+   - Difference between local variables and global variables.
+
+-------------------------------------
+----------====================================================================================--------------
+
+
+
+### Python Programming Concepts
+1. **Features of Python Programming Language**
+   - **Easy to Learn**: Python's syntax is designed to be intuitive and mirrors natural language, making it easier for beginners to learn and understand.
+   
+   - **Interpreted Language**: Python code is executed line by line by the Python interpreter, which makes debugging easier as errors are caught as soon as they occur.
+   
+   - **Versatile**: Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming, allowing for a wide range of applications from web development to data analysis.
+
+2. **Control Structures**
+   - **Break**: Immediately exits the current loop, skipping any remaining iterations. For example, if a condition is met, the loop stops running entirely.
+   - **Continue**: Skips the current iteration and moves on to the next iteration of the loop. This is useful when you want to skip certain conditions without exiting the loop.
+   - **Pass**: Acts as a placeholder where code is syntactically required but no action is needed. It’s often used in empty loops, functions, or classes.
+
+3. **Loops and Iteration**
+   - **Range Function**: The `range(2, 13)` function generates numbers from 2 to 12. It’s commonly used in loops to iterate over a sequence of numbers.
+   - **Skip Values in Loop**: To skip specific numbers like 13, 17, and 19, use an `if` condition inside the loop:
+     ```python
+     for i in range(1, 21):
+         if i not in [13, 17, 19]:
+             print(i)
+     ```
+
+4. **Strings and Lists**
+   - **String Slicing**: Extracts portions of a string using indices, such as `string[start:end]`. For example, `s = "Hello"` and `s[1:4]` returns `"ell"`.
+   - **Uppercase Method**: The `upper()` method converts all characters of a string to uppercase. For example, `a = "hello"` and `a.upper()` returns `"HELLO"`.
+   - **Accessing Tuple Elements**: For a tuple `B = ("OUSL", [20, 30, 40], (2, 4, 6))`, accessing `B[2][1]` returns `4`, which is the second element in the third item (a tuple) in `B`.
+
+### Data Structures
+1. **Mutable vs Immutable**
+   - **Mutable**: Objects like lists can be modified after they are created. For example, `list1 = [1, 2, 3]` can be changed to `[1, 2, 3, 4]` by adding an element.
+   - **Immutable**: Objects like strings and tuples cannot be changed once created. For example, `tuple1 = (1, 2, 3)` cannot be modified to `tuple1 = (1, 2, 3, 4)`; a new tuple must be created.
+
+2. **Tuples and Dictionaries**
+   - **Dictionaries**: A collection of key-value pairs, where each key is unique. For example, `dict1 = {"name": "Alice", "age": 25}` maps `"name"` to `"Alice"` and `"age"` to `25`.
+
+3. **Inheritance and Polymorphism**
+   - **Multiple Inheritance**: A class can inherit attributes and methods from more than one parent class. For example, a class `C` can inherit from both class `A` and class `B`.
+   - **Polymorphism**: Allows objects of different classes to be treated as objects of a common superclass. For example, different classes like `Dog`, `Cat`, and `Bird` can all have a `speak()` method, but each implements it differently.
+
+### Functions and Methods
+1. **Functions in Python**
+   - **Advantages**: Functions allow code reuse, making programs more modular and easier to maintain. They also improve code organization by dividing a program into smaller, manageable sections.
+   - **Return Statement**: Ends a function’s execution and optionally returns a value to the caller. For example, `return x + y` in a function returns the sum of `x` and `y` to where the function was called.
+
+2. **Lambda Functions**
+   - **Lambda Function**: A small anonymous function that can have any number of arguments but only one expression. For example, `lambda x, y: x + y` returns the sum of `x` and `y`. It’s used for short operations where defining a full function is unnecessary.
+
+3. **Math Functions**
+   - **Examples**: 
+     - `abs(x)` returns the absolute value of `x`.
+     - `pow(x, y)` returns `x` raised to the power of `y`.
+
+### Errors and Exceptions
+1. **Types of Errors**
+   - **Syntax Errors**: Errors in the code structure that prevent the program from running, like missing colons or incorrect indentation.
+   - **Runtime Errors**: Errors that occur while the program is running, such as division by zero or trying to access a list index that doesn’t exist.
+   - **Semantic Errors**: The program runs without crashing, but it doesn’t behave as expected due to logic errors, such as incorrect use of operators or wrong function calls.
+
+2. **Handling Exceptions**
+   - **Exception**: An event that occurs during the execution of a program that disrupts the normal flow of instructions. For example, dividing a number by zero raises a `ZeroDivisionError`.
+   - **ZeroDivisionError**: Raised when a division by zero is attempted. Handled using `try-except`:
+     ```python
+     try:
+         result = 1 / 0
+     except ZeroDivisionError:
+         print("Cannot divide by zero")
+     ```
+
+### Software Testing
+1. **Testing Concepts**
+   - **Alpha Testing**: Conducted by developers within the organization to catch bugs before the software is released to external testers or users.
+   - **Beta Testing**: Conducted by real users in a live environment to identify issues that weren’t found during Alpha testing.
+
+### Miscellaneous
+1. **Source Code and Algorithms**
+   - **Debugging**: The process of identifying and fixing errors in a program to ensure it runs correctly.
+   - **Source Code**: The original code written by the programmer in a programming language, which is compiled or interpreted to produce the executable program.
+   - **Algorithm**: A step-by-step procedure or set of rules to solve a problem or perform a task in programming, such as sorting a list or searching for a value.
+
+2. **Variables**
+   - **Local Variables**: Variables defined within a function, accessible only within that function. For example, `x` in the function `def foo(): x = 10` is local.
+   - **Global Variables**: Variables defined outside all functions, accessible throughout the program. For example, `x = 10` defined outside any function is global.
+
