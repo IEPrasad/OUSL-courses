@@ -37,7 +37,33 @@ Key Concepts in Normalization:
 
 
   
+Benefits of Normalization:
 
+  ** Improved Data Integrity: Reduces the risk of data anomalies and inconsistencies.
+
+  ** Efficient Data Storage: Minimizes redundancy, leading to more efficient use of storage space.
+
+  ** Easier Data Maintenance: Simplifies updates, deletions, and insertions in the database.
+
+  ** Better Query Performance: Optimizes database queries by reducing the amount of redundant data.
+
+
+
+Drawbacks of Normalization:
+
+  ** Complexity: Highly normalized databases can become complex, with many tables and relationships.
+
+  ** Performance Trade-offs: In some cases, too much normalization can lead to performance issues due to the 
+     need for multiple joins in queries.
+
+Denormalization:
+
+  In some cases, to improve performance, databases might be denormalized, which 
+  involves combining tables or introducing redundancy. This is a strategic decision 
+  made to balance the benefits of normalization with the need for faster query   
+  performance.
+
+  
 
 
 
