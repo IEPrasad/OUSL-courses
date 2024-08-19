@@ -21,4 +21,12 @@ CREATE TABLE ACCESSORY (
   Shop_Id varchar(10)
 );
 
+INSERT DATA ACCESSORY (AccNo, Name, Price, Shop_Id) VALUES 
+  ('A01', 'Mother Board', 12000, 'S001'),
+  ('A02', 'Hard Disk', 5000, 'S001'),
+  ('A03', 'Key Board',  500, 'S002'),
+  ('A04', 'Mouse', 300, 'S001'),
+  ('A05', 'Mother Board', 13000, 'S002');
+
+
 
