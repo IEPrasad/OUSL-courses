@@ -9,22 +9,28 @@ int main() {
   int count = length(Numbers);
   float average;
 
-  while (index < count) {
-    if (MINIMUM <= Numbers[index] <= MAXIMUM) {
-      total_valid += 1;
-      sum += 1;
-    } else {
-      index += 1;
+  printf("Enter index between 1 to 100: ");
+  scanf("%d", index);
+  if (1 <= index <= 100) {
+  
+    while (index < count) {
+      if (MINIMUM <= Numbers[index] <= MAXIMUM) {
+        total_valid += 1;
+        sum += 1;
+      } else {
+        index += 1;
+      }
     }
-  }
-
-  if (total_valid > 0) {
-    average = sum / total_valid;
-    printf("Total sum of valid numbers is: %d", sum);
-    printf("Average of valid number is: %f", average);
+  
+    if (total_valid > 0) {
+      average = sum / total_valid;
+      printf("Total sum of valid numbers is: %d", sum);
+      printf("Average of valid number is: %f", average);
+    } else {
+      printf("No valid inputs.");
+    }
   } else {
-    printf("No valid inputs.");
+    printf("Input Error!, Enter index numebr between 1 to 100!");
   }
-
   return 0;
 }
