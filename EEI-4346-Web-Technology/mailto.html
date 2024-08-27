@@ -15,3 +15,93 @@
 </html>
 
 <!-- By clicking this send to we can send a mail -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Link to an Email address</h2>
+    <h2>Use emailto</h2>
+
+<p>To create a link that opens in the user's email program (to let them send a new email), usr mailto: inside the href attribute: </p>
+    <p><a href="mailto:ieprasad23@gmail.com">Send email</a></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Links Example</title>
+    <style>
+        /* Styling the email links */
+        a.email-link {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a.email-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Link to an Email Address</h2>
+    <h2>Use mailto</h2>
+
+    <p>To create a link that opens the user's email program, use <code>mailto:</code> inside the <code>href</code> attribute:</p>
+    <p>
+        <a href="mailto:ieprasad23@gmail.com" class="email-link">Send Email</a>
+    </p>
+
+    <h3>Additional Features</h3>
+
+    <ol>
+        <li><strong>Subject Line & Body Pre-fill:</strong>
+            <p>
+                <a href="mailto:ieprasad23@gmail.com?subject=Inquiry&body=Hello%2C%20I%20would%20like%20more%20information%20about..." class="email-link">
+                    Send Email with Subject and Body
+                </a>
+            </p>
+        </li>
+        <li><strong>Multiple Recipients:</strong>
+            <p>
+                <a href="mailto:ieprasad23@gmail.com,example@example.com" class="email-link">
+                    Send Email to Multiple Recipients
+                </a>
+            </p>
+        </li>
+        <li><strong>CC and BCC:</strong>
+            <p>
+                <a href="mailto:ieprasad23@gmail.com?cc=cc@example.com&bcc=bcc@example.com" class="email-link">
+                    Send Email with CC and BCC
+                </a>
+            </p>
+        </li>
+        <li><strong>URL Encoding:</strong>
+            <p>
+                <a href="mailto:ieprasad23@gmail.com?subject=Hello%20World&body=Check%20out%20this%20link%20%3A%20https%3A%2F%2Fexample.com" class="email-link">
+                    Send Email with Encoded URL
+                </a>
+            </p>
+        </li>
+        <li><strong>Accessibility:</strong>
+            <p>
+                <a href="mailto:ieprasad23@gmail.com?subject=Feedback" class="email-link">
+                    Send Feedback via Email
+                </a>
+            </p>
+        </li>
+    </ol>
+</body>
+</html>
+
+
+<!-- This is with some additional things
+like how to include cc, bcc, subject, and send for few emails, -->
