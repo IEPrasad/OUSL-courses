@@ -1,0 +1,42 @@
+
+--- Bank Account System Instructions ---
+
+This is a simple bank account management system. The user can perform various actions such as creating an account, 
+depositing money, withdrawing money, transferring money, deleting an account, and checking the balance. 
+The data is stored in individual .txt files, where each account's data is kept.
+
+Follow these steps to use the system:
+
+1. Run the Python script. You will see a menu with the following options:
+   1. Create Account
+   2. Deposit Money
+   3. Withdraw Money
+   4. Transfer Money
+   5. Delete Account
+   6. Check Account Balance
+   7. Exit
+
+2. Choose the desired option by entering the corresponding number.
+
+3. For each operation:
+   - **Create Account**: Enter a new account number, the account holder's name, and an initial balance.
+   - **Deposit Money**: Enter the account number and the amount to deposit.
+   - **Withdraw Money**: Enter the account number and the amount to withdraw.
+   - **Transfer Money**: Enter the sender account number, receiver account number, and the amount to transfer.
+   - **Delete Account**: Enter the account number to delete (this will reset the balance to zero).
+   - **Check Account Balance**: Enter the account number to view the balance.
+
+4. The account data is stored in a .txt file named after the account number (e.g., 101.txt).
+
+5. The program will keep running until you select option 7 to exit.
+
+6. Make sure to provide valid inputs for each option to avoid errors.
+
+--- System Design ---
+- **File-Based Storage**: The system uses individual .txt files for each account, where the account number is the filename.
+- **Account Management**: All account actions (create, deposit, withdraw, transfer, delete) update the corresponding .txt file.
+- **Persistence**: Data is retained between program executions.
+
+--- For Developers ---
+- You can extend this system by adding more features like logging, error handling, or switching to a database for data storage.
+- This code can be adapted to work with web frameworks like Flask or Django to create a full-stack application.
