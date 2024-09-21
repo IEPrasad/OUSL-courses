@@ -38,26 +38,35 @@ class BankAccount:
         self.update_account_file()
         print(f"Account {self.account_number} deleted. Balance set to {self.balance}")
 
-    def calculate_interest(self, period_in_months):
-        interest_rate = self.get_interest_rate()
-        total_interest = (self.balance * (interest_rate / 100) * (period_in_months / 12))
-        print(f"Interest for {period_in_months} months: {total_interest}")
-        self.balance += total_interest
-        self.update_account_file()
-        print(f"New balance after interest: {self.balance}")
+    def calculate_interest(self, duration):
+        if self.account_type == 'Current Account':
+            print("Current Accounts do not accrue interest.")
+            return self.balance
 
-    def get_interest_rate(self):
-        # Define interest rate based on balance
-        if self.balance >= 2000000:  # More than 20 lakh
-            return 12
-        elif self.balance >= 1000000:  # Between 10 lakh and 20 lakh
-            return 8
-        elif self.balance >= 500000:  # Between 5 lakh and 10 lakh
-            return 5
-        elif self.balance >= 100000:  # Between 1 lakh and 5 lakh
-            return 3
+        # Determine interest rate based on balance
+        interest_rate = 0
+        if self.balance > 2000000:
+            interest_rate = 0.12
+        elif self.balance > 1000000:
+            interest_rate = 0.08
+        elif self.balance > 500000:
+            interest_rate = 0.05
+        elif self.balance > 100000:
+            interest_rate = 0.03
+
+        # Calculate interest for the given duration
+        if duration == "month":
+            interest = self.balance * (interest_rate / 12)
+        elif duration == "year":
+            interest = self.balance * interest_rate
         else:
-            return 0  # Less than 1 lakh
+            print("Invalid duration. Use 'month' or 'year'.")
+            return self.balance
+
+        new_balance = self.balance + interest
+        print(f"Interest accrued for {duration}: {interest:.2f}")
+        print(f"New balance after {duration}: {new_balance:.2f}")
+        return new_balance
 
     def update_account_file(self):
         with open(f"{self.account_number}.txt", "w") as file:
@@ -70,3 +79,102 @@ def create_account():
     # User chooses account type
     print("Choose account type:")
     print("1. Savings Account")
+    print("2. Fixed Deposit Account (Permanent Savings Account)")
+    print("3. Current Account")
+    account_type_choice = input("Enter the number corresponding to the account type: ")
+
+    if account_type_choice == '1':
+        account_type = 'Savings Account'
+    elif account_type_choice == '2':
+        account_type = 'Fixed Deposit Account'
+    elif account_type_choice == '3':
+        account_type = 'Current Account'
+    else:
+        print("Invalid account type. Defaulting to Savings Account.")
+        account_type = 'Savings Account'
+
+    initial_balance = float(input("Enter initial balance: "))
+    account = BankAccount(account_number, name, account_type, initial_balance)
+    account.update_account_file()
+    print(f"{account_type} with account number {account_number} created successfully!\n")
+    return account
+
+def load_account(account_number):
+    if os.path.exists(f"{account_number}.txt"):
+        with open(f"{account_number}.txt", "r") as file:
+            data = file.readline().strip().split(",")
+            return BankAccount(int(data[0]), data[1], data[2], float(data[3]))
+    else:
+        print(f"Account {account_number} not found.")
+        return None
+
+def bank_menu():
+    while True:
+        print("\n--- Bank Account System ---")
+        print("1. Create Account")
+        print("2. Deposit Money")
+        print("3. Withdraw Money")
+        print("4. Transfer Money")
+        print("5. Delete Account")
+        print("6. Check Account Balance")
+        print("7. Calculate Interest")
+        print("8. Exit")
+
+        choice = input("Choose an option: ")
+
+        if choice == '1':
+            create_account()
+
+        elif choice == '2':
+            account_number = int(input("Enter account number: "))
+            account = load_account(account_number)
+            if account:
+                amount = float(input("Enter amount to deposit: "))
+                account.deposit(amount)
+
+        elif choice == '3':
+            account_number = int(input("Enter account number: "))
+            account = load_account(account_number)
+            if account:
+                amount = float(input("Enter amount to withdraw: "))
+                account.withdraw(amount)
+
+        elif choice == '4':
+            from_account_number = int(input("Enter sender account number: "))
+            from_account = load_account(from_account_number)
+            if from_account:
+                to_account_number = int(input("Enter receiver account number: "))
+                to_account = load_account(to_account_number)
+                if to_account:
+                    amount = float(input("Enter amount to transfer: "))
+                    from_account.transfer(to_account, amount)
+
+        elif choice == '5':
+            account_number = int(input("Enter account number to delete: "))
+            account = load_account(account_number)
+            if account:
+                account.delete_account()
+
+        elif choice == '6':
+            account_number = int(input("Enter account number: "))
+            account = load_account(account_number)
+            if account:
+                print(f"Account Type: {account.account_type}")
+                print(f"Account balance for {account.name} is: {account.balance}")
+
+        elif choice == '7':
+            account_number = int(input("Enter account number: "))
+            account = load_account(account_number)
+            if account:
+                duration = input("Calculate interest for 'month' or 'year': ").lower()
+                account.calculate_interest(duration)
+
+        elif choice == '8':
+            print("Exiting the system. Goodbye!")
+            break
+
+        else:
+            print("Invalid choice. Please try again.")
+
+# Run the bank menu
+bank_menu()
