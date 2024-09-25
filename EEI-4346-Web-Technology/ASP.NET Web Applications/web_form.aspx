@@ -1,20 +1,34 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Web_form_01.aspx.cs" Inherits="PS_01.Web_form_01" %>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
-<!DOCTYPE html>
+namespace PS_01
+{
+    public partial class Web_form_01 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
+        }
 
-        <asp:Label ID="lbl_name" runat="server" Text="Name"></asp:Label>
-        <asp:TextBox ID="txt_name" runat="server"></asp:TextBox>
-        <br />
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-    </form>
-</body>
-</html>
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Write(txt_name.Text + "<br>");
+            Response.Write(ListBox1.SelectedItem.Text + "<br>");
+
+            lbl_name.Visible = false;
+            txt_name.Visible = false;
+            lbl_center.Visible = false;
+            lbl_gender.Visible = false;
+
+        }
+    }
+}
