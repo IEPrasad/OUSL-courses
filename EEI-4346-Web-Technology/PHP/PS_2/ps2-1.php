@@ -15,12 +15,37 @@
         echo "<br/>";
         echo "<br/>";
 
-        echo strlen("Programming");
+        echo strlen("Programming"); // >>> 11
 
         echo "<br/>";
 
-        echo str_word_count("The open university of Sri Lanka");
+        echo str_word_count("The open university of Sri Lanka"); // >>> 6
+        
+        echo "<br/>";
 
+        echo strrev("Hello"); // >>> olleH
     ?>
 </body>
 </html>
+
+<!-- 
+    PHP operations 
+
+        Operator    Name                Example
+        
+        +           Addition            $x + $y
+        -           Substraction        $x - $y
+        *           Multiplication      $x * $y
+        /           Division            $x / $y
+        %           Modulus             $x % $y
+        **          Exponentation       $x ** $y
+-->
+
+<!-- 
+    if (condition) {
+        code to be executed if the condtion is true;
+    } else {
+        code to be executed if the condition is false; 
+    }
+
+-->
