@@ -10,6 +10,8 @@
 
     <?php 
 
+        $age = 20;
+
         echo "<br/>";
         echo "String Functions";
         echo "<br/>";
@@ -24,6 +26,15 @@
         echo "<br/>";
 
         echo strrev("Hello"); // >>> olleH
+
+        echo "<br/><br/>";
+
+        if ($age > 18) {
+            echo "You are eligible for voting";
+        } else {
+            echo "You are not eligible for voting";
+        }
+    
     ?>
 </body>
 </html>
