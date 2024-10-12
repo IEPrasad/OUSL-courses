@@ -2,6 +2,7 @@
 // Initialize variables to store user input and error messages
 $name = $email = $message = "";
 $nameErr = $emailErr = $messageErr = "";
+$displayData = false; // Flag to check if data should be displayed
 
 // Check if the form is submitted using the POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -11,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nameErr = "Name is required";
     } else {
         $name = sanitize_input($_POST["name"]);
-        // Only allow letters and white space
         if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
             $nameErr = "Only letters and white space allowed";
         }
@@ -22,7 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $emailErr = "Email is required";
     } else {
         $email = sanitize_input($_POST["email"]);
-        // Validate email format
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $emailErr = "Invalid email format";
         }
@@ -35,13 +34,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = sanitize_input($_POST["message"]);
     }
 
-    // If there are no errors, you can proceed with form processing or data storage
+    // If no errors, set displayData to true to show the results
     if (empty($nameErr) && empty($emailErr) && empty($messageErr)) {
-        // You can store the data to the database, send an email, etc.
+        $displayData = true;
     }
 }
 
-// Function to sanitize input to prevent XSS attacks
+// Function to sanitize input to prevent XSS
 function sanitize_input($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -60,26 +59,37 @@ function sanitize_input($data) {
         .error { color: red; }
         .container { width: 50%; margin: 0 auto; padding: 20px; }
     </style>
+    <script>
+        // JavaScript function to reset form fields after submission
+        function clearForm() {
+            document.getElementById("userForm").reset();  // Resets the form inputs
+        }
+
+        // Call this function on page load to clear the input fields
+        window.onload = function() {
+            clearForm();
+        };
+    </script>
 </head>
 <body>
     <div class="container">
         <h2>PHP Form Example</h2>
         <p><span class="error">* required field</span></p>
 
-        <!-- Form to take user input -->
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <!-- Form with an ID for JavaScript access -->
+        <form id="userForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" value="<?php echo $name; ?>">
+            <input type="text" id="name" name="name">
             <span class="error">* <?php echo $nameErr; ?></span>
             <br><br>
 
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email" value="<?php echo $email; ?>">
+            <input type="text" id="email" name="email">
             <span class="error">* <?php echo $emailErr; ?></span>
             <br><br>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" cols="40"><?php echo $message; ?></textarea>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
             <span class="error">* <?php echo $messageErr; ?></span>
             <br><br>
 
@@ -87,11 +97,16 @@ function sanitize_input($data) {
         </form>
 
         <!-- Display the result -->
-        <?php if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($nameErr) && empty($emailErr) && empty($messageErr)): ?>
+        <?php if ($displayData): ?>
         <h3>Your Submitted Information:</h3>
         <p><strong>Name:</strong> <?php echo $name; ?></p>
         <p><strong>Email:</strong> <?php echo $email; ?></p>
         <p><strong>Message:</strong> <?php echo nl2br($message); ?></p>
+
+        <!-- Clear form after submission -->
+        <script>
+            clearForm();
+        </script>
         <?php endif; ?>
     </div>
 </body>
