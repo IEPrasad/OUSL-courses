@@ -6,11 +6,12 @@
   <title>Document</title>
 </head>
 <body>
-<?php 
+
+<?php
   // Check if 'name' parameter is set in the URL
-  if (isset($_GET['name'] && !empty($_GET['name']))) {
-    $_name = htmlspecialchars($_GET['name']); // Sanitize the input
-    echo "<h2>Hello, $name!</h2>";
+  if (isset($_GET['name']) && !empty($_GET['name'])) {
+      $name = htmlspecialchars($_GET['name']); // Sanitize the input
+      echo "<h2>Hello, $name!</h2>";
   }
 ?>
 
@@ -21,5 +22,6 @@
     <input type="submit" value="SUBMIT">
   </label>
 </form>
+
 </body>
 </html>
