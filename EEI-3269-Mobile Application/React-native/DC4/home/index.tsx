@@ -8,6 +8,7 @@ import {
   Image,
   SafeAreaView,
   StatusBar,
+  ScrollView,
   Dimensions,
 } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -16,18 +17,19 @@ const HomeScreen = () => {
   const router = useRouter();
 
   return (
+    <ScrollView>
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" backgroundColor="#fff" />
       
       {/* Header Section */}
       <View style={styles.header}>
         <Image
-          source={{ uri: 'https://via.placeholder.com/50' }}
+          source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4n9vUNCLmnEJ5pKIl0VUwTPofdPGIXPf2pA&s' }}
           style={styles.profilePic}
         />
         <View style={styles.headerTextContainer}>
           <Text style={styles.welcomeText}>Welcome back</Text>
-          <Text style={styles.nameText}>John Doe</Text>
+          <Text style={styles.nameText}>Home</Text>
         </View>
       </View>
 
@@ -38,13 +40,13 @@ const HomeScreen = () => {
           <View style={styles.buttonContainer}>
             <TouchableOpacity 
               style={styles.actionButton}
-              onPress={() => router.push('/profile')}
+              onPress={() => router.push('/home')}
             >
               <Text style={styles.actionButtonText}>Profile</Text>
             </TouchableOpacity>
             <TouchableOpacity 
               style={styles.actionButton}
-              onPress={() => router.push('/settings')}
+              onPress={() => router.push('/home')}
             >
               <Text style={styles.actionButtonText}>Settings</Text>
             </TouchableOpacity>
@@ -55,7 +57,7 @@ const HomeScreen = () => {
         <View style={styles.authButtons}>
           <TouchableOpacity
             style={styles.loginButton}
-            onPress={() => router.push('/login')}
+            onPress={() => router.push('/(tabs)')}
           >
             <Text style={styles.loginButtonText}>Go to Login</Text>
           </TouchableOpacity>
@@ -68,14 +70,16 @@ const HomeScreen = () => {
           </TouchableOpacity>
         </View>
       </View>
+   
     </SafeAreaView>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#002020',
   },
   header: {
     flexDirection: 'row',
@@ -131,7 +135,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   actionButton: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#000000',
     paddingVertical: 12,
     paddingHorizontal: 30,
     borderRadius: 10,
@@ -147,7 +151,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   loginButton: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#009900',
     padding: 15,
     borderRadius: 10,
     marginBottom: 15,
@@ -159,7 +163,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   signupButton: {
-    backgroundColor: '#ffffff',
+    backgroundColor: '#550033',
     padding: 15,
     borderRadius: 10,
     borderWidth: 1,
