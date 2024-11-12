@@ -12,6 +12,8 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
   Image,
+  ImageBackground,
+  ScrollView,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 
@@ -40,6 +42,7 @@ const SignupScreen = () => {
   };
 
   return (
+  <ScrollView contentContainerStyle={styles.scrollViewContainer}>
     <SafeAreaView style={styles.container}>
       <KeyboardAvoidingView
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
@@ -117,7 +120,7 @@ const SignupScreen = () => {
 
             <View style={styles.loginContainer}>
               <Text style={styles.loginText}>Already have an account? </Text>
-              <TouchableOpacity onPress={() => router.push('/login')}>
+              <TouchableOpacity onPress={() => router.push('/(tabs)')}>
                 <Text style={styles.loginLink}>Log In</Text>
               </TouchableOpacity>
             </View>
@@ -125,14 +128,28 @@ const SignupScreen = () => {
         </TouchableWithoutFeedback>
       </KeyboardAvoidingView>
     </SafeAreaView>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    flexDirection: 'column',
+    backgroundColor: 'rgba(10,50,20,0.9)',
   },
+  back: {
+    width: 100, 
+    height: 100,
+    resizeMode: 'cover', // Ensures the image covers the view
+  },
+
+  background_image: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
   keyboardAvoidingView: {
     flex: 1,
   },
@@ -214,7 +231,11 @@ const styles = StyleSheet.create({
     color: '#007AFF',
     fontSize: 16,
     fontWeight: '600',
-  }
+  },
+  scrollViewContainer: {
+    flexGrow: 1, // Ensures the ScrollView takes up full space
+  },
+
 });
 
 export default SignupScreen;
