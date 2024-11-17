@@ -7,7 +7,7 @@ class Shape {
 }
 
 // Derrived class 1
-class Cicle extends Shape {
+class Circle extends Shape {
   @Override
   public void draw() {
     System.out.println("Drawing a Circle...");
@@ -31,7 +31,7 @@ public class PolymorphismExample {
 
     // Calling the overridden methods
     shape1.draw(); // Outputs: Drawing a Circle...
-    Shape2.draw(); // Output: Drawing a Rectangle... 
+    shape2.draw(); // Output: Drawing a Rectangle... 
   }
 }
 
