@@ -1,0 +1,6 @@
+src/
+├── App.tsx
+├── components/
+│   ├── MathUtils.tsx
+│   ├── Shapes.tsx
+│   ├── Constants.tsx
