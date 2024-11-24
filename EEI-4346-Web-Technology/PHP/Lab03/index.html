@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Department</title>
+</head>
+<body>
+  <h1>Add Department</h1>
+  <form method="post" action="process.php">
+
+    <table>
+      <tr>
+        <td><label for="emp_dept">Department Name:</label></td>
+        <td><input type="text" id="emp_dept" name="emp_dept" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="dept_type">Department Type:</label></td>
+        <td><input type="text" id="dept_type" name="dept_type" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="emp_dept_no">Department Number:</label></td>
+        <td><input type="number" id="emp_dept_no" name="emp_dept_no" required></td>
+      </tr>
+    
+      <tr><td><input type="submit" name="action" value="Insert"></td></tr>
+
+      <tr><td><h2>Search Department</h2></td></tr>
+      <form method="get" action="process.php">
+        <tr>
+          <td><label for="search_emp_dept">Department Name:</label></td>
+          <td><input type="text" id="search_emp_dept" name="search_emp_dept" required></td>
+        </tr>
+      
+        <tr><td><input type="submit" name="action" value="Search"></td></tr>
+        
+      </form>
+    
+  </form>
+  </table>
+
+</body>
+</html>
