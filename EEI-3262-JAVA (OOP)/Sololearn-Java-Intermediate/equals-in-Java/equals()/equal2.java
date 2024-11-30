@@ -41,5 +41,4 @@ class Program {
 
 /*
   You can use the same menu to generate other useful mehtods, such as getters and setters for your class attributes.
-
 */
