@@ -1,0 +1,44 @@
+1. What is refactoring in programming ?
+  ** The process of restructuring existing code without changing its external behavior to improve its readability, maintainability, and extensibility.
+
+  (extensibility = විස්තීරණ හැකියාව)
+
+
+2. What is a superclass in object-oriented-programming ?
+  ** A class from which other classes can inherit properties and methods
+
+
+3. What happens when a abstract class contains an unimplemented method but a subclass fails to provide an implementation>
+  ** The subclass must be declared as abstract
+
+
+4. In Java, what is the purpose of the super keyword?
+  ** To refer to the immediate parent class of an object and access its methods and attributes. 
+
+
+5. What is encapsulation in object-oriented-programming 
+  ** The practice of hiding the internal details of an object and providing a public interface for interaction
+
+
+6. What is exception handling in programming ?
+  ** The process of anticipating and dealing with exceptional or unexpected situations that may occur during program execution
+  
+  (anticipating = අපේක්ෂා කරනවා)
+
+
+7. What is the significance of the static keyword in Java?
+  ** It indicates tha ta method or variable belongs to the class itself, rather than to instances of the class
+
+
+8. What is inheritance in object-oriented-programming ?
+  ** The ability of a class to inherit the properties and methods of another class
+
+
+9. How does the concept of encapsulation apply to Java classes and objects?
+  ** Encapsulation in Java involves defining the attributes of a class as private and providing public getter and setter methods to access and modify them. This hides the internal details of the object and provides a public interface for interaction.
+
+
+10. What happen when an exception is not cought in Java?
+  ** The program terminates abruptly and displays a stack trace.
+
+  (abruptly = හදිසියේ)
