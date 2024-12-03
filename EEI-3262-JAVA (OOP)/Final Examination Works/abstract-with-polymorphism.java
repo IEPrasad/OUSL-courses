@@ -78,3 +78,26 @@ public class Main {
         rentalSystem.rentVehicle(truck);
     }
 }
+
+
+
+/*
+// >>> 
+Renting a vehicle...
+Brand: Toyota
+Car is starting with a key ignition.
+Vehicle rented successfully!
+
+Renting a vehicle...
+Brand: Honda
+Motorcycle is starting with a button press.
+Vehicle rented successfully!
+
+Renting a vehicle...
+Brand: Volvo
+Truck is starting with a heavy-duty engine.
+Vehicle rented successfully!
+
+
+*/
+
