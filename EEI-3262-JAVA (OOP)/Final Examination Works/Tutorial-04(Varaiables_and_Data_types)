@@ -1,0 +1,77 @@
+// Tutorial-04(Variables_and_Data_types).java
+/*
+ * This tutorial explains the concept of variables and data types in Java.
+ * A variable is a container for storing data values.
+ * Data types specify the type of data that a variable can store.
+ */
+
+public class Tutorial04_VariablesAndDataTypes {
+
+    public static void main(String[] args) {
+        // 1. Declaring and initializing variables
+        // Syntax: dataType variableName = value;
+
+        // Primitive Data Types:
+        // a. Integer types
+        byte byteVar = 10;          // 1 byte: -128 to 127
+        short shortVar = 1000;      // 2 bytes: -32,768 to 32,767
+        int intVar = 100000;        // 4 bytes: -2^31 to 2^31-1
+        long longVar = 100000000L;  // 8 bytes: -2^63 to 2^63-1 (suffix 'L')
+
+        // b. Floating-point types
+        float floatVar = 3.14f;     // 4 bytes: Up to 7 decimal digits (suffix 'f')
+        double doubleVar = 3.14159; // 8 bytes: Up to 15 decimal digits
+
+        // c. Character type
+        char charVar = 'A';         // 2 bytes: Stores a single character using Unicode
+
+        // d. Boolean type
+        boolean boolVar = true;     // 1 bit: Stores true or false
+
+        // Non-Primitive (Reference) Data Types:
+        // Strings and Arrays are examples of non-primitive types.
+        String stringVar = "Hello, Java!"; // A sequence of characters
+        int[] intArray = {1, 2, 3, 4, 5}; // Array of integers
+
+        // 2. Displaying variable values
+        System.out.println("Byte variable: " + byteVar);
+        System.out.println("Short variable: " + shortVar);
+        System.out.println("Integer variable: " + intVar);
+        System.out.println("Long variable: " + longVar);
+        System.out.println("Float variable: " + floatVar);
+        System.out.println("Double variable: " + doubleVar);
+        System.out.println("Character variable: " + charVar);
+        System.out.println("Boolean variable: " + boolVar);
+        System.out.println("String variable: " + stringVar);
+        System.out.print("Array elements: ");
+        for (int num : intArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        // 3. Type Casting
+        // a. Implicit Casting (Widening): Smaller type to larger type
+        int smallInt = 50;
+        double largeDouble = smallInt; // Automatically converts int to double
+        System.out.println("Implicit Casting: int to double = " + largeDouble);
+
+        // b. Explicit Casting (Narrowing): Larger type to smaller type
+        double doubleValue = 9.99;
+        int intValue = (int) doubleValue; // Manually converts double to int
+        System.out.println("Explicit Casting: double to int = " + intValue);
+
+        // 4. Constants
+        final int CONSTANT_VALUE = 100; // A value that cannot be changed
+        System.out.println("Constant value: " + CONSTANT_VALUE);
+    }
+}
+
+/*
+ * Key Points:
+ * - Variables must be declared before use.
+ * - Choose appropriate data types for efficiency and memory usage.
+ * - Constants are declared using the `final` keyword.
+ * - Use type casting to convert data types when necessary.
+ * 
+ * Happy Coding!
+ */
