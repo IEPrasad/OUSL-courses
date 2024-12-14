@@ -11,3 +11,37 @@
   2. Abstraction 
   3. Inheritance
   4. Polymorphism
+
+
+1. Encapsulation 
+
+Encapsulation means bundling the data (fields) and methods (functions) that 
+operate on the data into a single unit (class) and restricting access to some of 
+the object's components. 
+'
+
+Code Example:
+
+// Encapsulation
+class BankAccount {
+  private String accountHolderName;
+  private double balance;
+
+  // Constructor 
+  public BankAccount(String accountHolderName, double initialDeposit) {
+    this.accountHolderName = accountHolderName;
+    this.balance = initialDeposit;
+  }
+
+  // Getter for accountHolderName
+  public String getaccountHolderName() {
+    return accountHolderName;
+  }
+
+  // Getter for balance 
+  public double getBalance() {
+    return balance;
+  }
+
+  // Method to deposit money
+}
