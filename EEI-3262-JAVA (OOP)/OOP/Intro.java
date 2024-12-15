@@ -112,3 +112,50 @@ public class AbstractionDemo {
 
 3. Inheritance
 
+Inheritance is a mechanism where a new class (subclass) derives properties and behavior from a existing class (superclass).
+
+Code Example:
+
+// Inheritance example: Employee Hierarchy
+class Employee {
+  String name;
+  double salary;
+
+  public Employee(String name, double salary) {
+    this.name = name;
+    this.salary = salary;
+  }
+
+  public void displayDetails() {
+    System.out.println("Employee Name: " + name);
+    System.out.println("Salary: " + salary); 
+  }
+}
+
+class Manager extends Employee {
+  String department;
+
+  public Manager(String name, double salary, String department) {
+    super(name, salary);
+    this.department = department;
+  }
+
+  @Override
+  public void displayDetails() {
+    super.displayDetails();
+    System.out.println("Department: " + department); 
+  } 
+}
+
+// Main Class
+public class InheritanceDemo {
+  public static void main(String[] args) {
+    Manager manager = new Manager("Bob", 7500, "IT");
+    manager.displayDetails();
+  }
+}
+
+--------------------------------------------------------------
+
+
+4. Polymorphism
