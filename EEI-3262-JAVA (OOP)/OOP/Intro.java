@@ -63,3 +63,52 @@ public class EncapsulationDemo {
     account.withdraw(200);
   }
 }
+
+-----------------------------------------------------------------------------
+
+2. Abstraction 
+
+Abstraction is hiding the implementation details and showing only the functionality to the user. It is achieved using "abstract classes" or interfaces.
+
+Code Example:
+
+// Abstract class example: Shape
+abstract class Shape {
+  abstract void draw(); // Abstract method
+
+  public void displayInfo() {
+    System.out.println("This is a shape.");
+  }
+}
+
+class Circle extends Shape {
+  @Override 
+  void draw() {
+    System.out.println("Drawing a Circle.");
+  }
+}
+
+class Rectangle extends Shape {
+  @Override 
+  voide draw() {
+    System.out.println("Drawing a Rectangle.");
+  }
+}
+
+// Main Class
+public class AbstractionDemo {
+  public static void main(String[] args) {
+    Shape circle = new Circle();
+    circle.draw();
+    circle.displayInfo();
+
+    Shape rectangle = new Rectangle();
+    rectangle.draw();
+    rectangle.displayInfo();
+  }
+}
+
+---------------------------------------------------------------------------
+
+3. Inheritance
+
