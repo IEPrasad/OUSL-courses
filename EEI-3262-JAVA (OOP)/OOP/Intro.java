@@ -162,3 +162,38 @@ public class InheritanceDemo {
 
 Polymorphism allows methods to perform differently based on the object calls them.
 It can be achieved using method overriding or method overloading.
+
+Code Example:
+
+// Polymorphism example: Payment System
+class Payment {
+  public void makePayment() {
+    System.out.println("Making a generic payment.");
+  }
+}
+
+class CreditCardPayment extends Payment {
+  @Override 
+  public void makePayment() {
+    System.out.println("Making payment using Credit Card.");
+  }
+}
+
+class PayPalPayment extends Payemnt {
+  @Override 
+  public void makePayment() {
+    System.out.println("Making payement using PayPal.");
+  }
+}
+
+// Main Class
+public class PolymorphismDemo {
+  public static void main(String[] args) {
+    Payment payment1 = new CreditCardPayment();
+    payment1.makePayment();
+
+    Payemnt payment2 = new PayPalPayment();
+    payement2.makePayment();
+  }
+}
+
