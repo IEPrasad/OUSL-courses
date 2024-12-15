@@ -159,3 +159,6 @@ public class InheritanceDemo {
 
 
 4. Polymorphism
+
+Polymorphism allows methods to perform differently based on the object calls them.
+It can be achieved using method overriding or method overloading.
