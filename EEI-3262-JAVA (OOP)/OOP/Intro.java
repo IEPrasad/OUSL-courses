@@ -44,4 +44,22 @@ class BankAccount {
   }
 
   // Method to deposit money
+  public void deposit(double amount) {
+    if (amount > 0) {
+      balance += amount;
+      System.out.println("Deposit successful. New balance: " + balance);
+    } else {
+      System.out.println("Invalid deposit amount.");
+    }
+  }
+}
+
+// Main class
+public class EncapsulationDemo {
+  public static void main(String[] args) {
+    BankAccount account = new BankAccount("Alice", 1000.00);
+    System.out.println("Account Holder: " + account.getAccountHolderName());
+    account.deposit(500);
+    account.withdraw(200);
+  }
 }
