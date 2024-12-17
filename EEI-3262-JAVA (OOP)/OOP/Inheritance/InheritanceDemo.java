@@ -26,3 +26,89 @@ Types of Inheritance in Java:
   (Note: Java does not support multiple inheritance with classes to avoid ambiguity, but it allows it with interfaces.)
 
 */
+
+// Superclass (Parent Class)
+class Employee {
+    // Common fields for all employees
+    protected String name;
+    protected double salary;
+
+    // Constructor to initialize common fields
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    // Method to display employee details
+    public void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Salary: $" + salary);
+    }
+}
+
+// Subclass (Child Class)
+class Manager extends Employee {
+    // Additional field specific to Manager
+    private String department;
+
+    // Constructor for Manager
+    public Manager(String name, double salary, String department) {
+        super(name, salary); // Call to the superclass constructor
+        this.department = department;
+    }
+
+    // Overriding the displayDetails method
+    @Override
+    public void displayDetails() {
+        super.displayDetails(); // Call the superclass method
+        System.out.println("Department: " + department);
+    }
+
+    // Additional method specific to Manager
+    public void conductMeeting() {
+        System.out.println(name + " is conducting a meeting in the " + department + " department.");
+    }
+}
+
+// Subclass (Child Class)
+class Developer extends Employee {
+    // Additional field specific to Developer
+    private String programmingLanguage;
+
+    // Constructor for Developer
+    public Developer(String name, double salary, String programmingLanguage) {
+        super(name, salary); // Call to the superclass constructor
+        this.programmingLanguage = programmingLanguage;
+    }
+
+    // Overriding the displayDetails method
+    @Override
+    public void displayDetails() {
+        super.displayDetails(); // Call the superclass method
+        System.out.println("Programming Language: " + programmingLanguage);
+    }
+
+    // Additional method specific to Developer
+    public void writeCode() {
+        System.out.println(name + " is writing code in " + programmingLanguage + ".");
+    }
+}
+
+// Main class to test inheritance
+public class InheritanceDemo {
+    public static void main(String[] args) {
+        // Create a Manager object
+        Manager manager = new Manager("Alice", 75000, "HR");
+        System.out.println("Manager Details:");
+        manager.displayDetails();
+        manager.conductMeeting();
+
+        System.out.println();
+
+        // Create a Developer object
+        Developer developer = new Developer("Bob", 60000, "Java");
+        System.out.println("Developer Details:");
+        developer.displayDetails();
+        developer.writeCode();
+    }
+}
