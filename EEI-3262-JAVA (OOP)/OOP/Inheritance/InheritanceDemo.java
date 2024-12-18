@@ -139,3 +139,21 @@ public class InheritanceDemo {
   * Creates objects of Manager and Developer to show inheritance in action.
 
 */
+
+
+
+// Output
+// When we run the program, the output will be:
+// >>>
+
+// Manager Details:
+// Name: Alice 
+// Salary: $75000.0
+// Department: HR
+// Alice is conducting a meeting in the HR department.
+
+// Developer Details:
+// Name: Bob
+// Salary: $60000.0
+// Programming Language: Java 
+// Bob is writing code in Java.
