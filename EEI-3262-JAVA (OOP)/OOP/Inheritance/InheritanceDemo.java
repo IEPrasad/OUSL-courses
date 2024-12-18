@@ -112,3 +112,30 @@ public class InheritanceDemo {
         developer.writeCode();
     }
 }
+
+/*
+** Code Explanation
+
+1. Superclass (Employee):
+
+  * Defines common fields (name, salary) and a method (displayDetails) for all employees.
+  * Provides a constructor to initialize the fields.
+
+2. Subclass (Manager):
+
+  * Inherits common fields and methods from Employee.
+  * Adds a new field department and a method conductMeeting.
+  * Overrides displayDetails to include department details.
+
+3. Subclass (Developer):
+
+  * Inherits common fields and methods from Employee.
+  * Adds a new field programmingLanguage and a method writeCode.
+  * Overrides displayDetails to include programmingLanguage details.
+
+4. Main Class:
+
+  * Demonstrates polymorphism by calling overridden methods.
+  * Creates objects of Manager and Developer to show inheritance in action.
+
+*/
