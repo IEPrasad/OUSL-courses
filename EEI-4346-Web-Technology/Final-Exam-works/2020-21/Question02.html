@@ -1,4 +1,4 @@
-2. Answer the following question.
+<!-- 2. Answer the following question.
   
   a. What is the difference between == and === ?
   b. Name five (5) different form elements and their description.
@@ -10,11 +10,11 @@ a. What is the difference between == and === ?
 
   ** == (Loose equality): It compares values for equality, but if coerces (converts) data types if necessary.
 
-    ** Example: "5" == 5 --> true (because both are considered equal after type conversion)
+    ** Example: "5" == 5 -> true (because both are considered equal after type conversion)
 
   ** === (Strict equality): It compares both the value and the type without type coercion.
 
-    ** Example: "5" === 5 --> false (because the types are different, one is a string and the other is a number)
+    ** Example: "5" === 5 -> false (because the types are different, one is a string and the other is a number)
 
                   ------------------
 
@@ -72,8 +72,121 @@ d. What are the three (3) ways of inserting CSS into a web page? and give an exa
 
         ** Example: <link rel="stylesheet" type="text/css" href="styles.css">
 
-        
-      
+ -->
 
-      
-  
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Questions Representation</title>
+    <style>
+        /* Internal CSS */
+        /* Example for question d: Internal CSS */
+        .green-text {
+            color: green;
+            font-size: 20px;
+        }
+
+        /* Question c: CSS Selectors */
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Type Selector */
+        h2 {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #unique {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 2px solid red;
+        }
+    </style>
+    <script>
+        // Question a: Difference Between == and ===
+        function compareValues() {
+            console.log("5 == '5':", 5 == '5'); // true
+            console.log("5 === '5':", 5 === '5'); // false
+        }
+    </script>
+</head>
+<body onload="compareValues()">
+
+    <!-- Question a: Difference Between == and === -->
+    <section>
+        <h2>Question a: Difference Between == and ===</h2>
+        <p>Open the console to see the comparison results of <code>==</code> and <code>===</code>.</p>
+    </section>
+
+    <!-- Question b: Five Form Elements -->
+    <section>
+        <h2>Question b: Five Form Elements</h2>
+        <form>
+            <!-- Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <!-- Textarea -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+            <!-- Select -->
+            <label for="color">Choose a color:</label>
+            <select id="color" name="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select><br><br>
+
+            <!-- Button -->
+            <button type="submit">Submit</button><br><br>
+
+            <!-- Label -->
+            <label>This is a label for the Name field above.</label>
+        </form>
+    </section>
+
+    <!-- Question c: CSS Selectors -->
+    <section>
+        <h2>Question c: CSS Selector Categories</h2>
+        <!-- Universal Selector Example -->
+        <p>This text is styled using the universal selector (*).</p>
+
+        <!-- Type Selector Example -->
+        <h2>This heading is styled using the type selector.</h2>
+
+        <!-- Class Selector Example -->
+        <p class="highlight">This paragraph has a yellow background using the class selector.</p>
+
+        <!-- ID Selector Example -->
+        <p id="unique">This paragraph has a unique style using the ID selector.</p>
+
+        <!-- Attribute Selector Example -->
+        <label for="inputField">Enter Text:</label>
+        <input type="text" id="inputField" name="inputField">
+    </section>
+
+    <!-- Question d: Three Ways of Inserting CSS -->
+    <section>
+        <h2>Question d: Three Ways of Inserting CSS</h2>
+        <!-- Inline CSS Example -->
+        <h1 style="color: red;">This heading is styled with Inline CSS</h1>
+
+        <!-- Internal CSS Example -->
+        <p class="green-text">This paragraph is styled with Internal CSS</p>
+    </section>
+</body>
+</html>
+
+<!-- --- Full of the code --- Read this code carefully and understand --- -->
