@@ -1,0 +1,79 @@
+2. Answer the following question.
+  
+  a. What is the difference between == and === ?
+  b. Name five (5) different form elements and their description.
+  c. Name the five (5) categories of CSS selector with examples.
+  d. What are the three (3) ways of inserting CSS into a web page? And give an example for each.
+
+
+a. What is the difference between == and === ?
+
+  ** == (Loose equality): It compares values for equality, but if coerces (converts) data types if necessary.
+
+    ** Example: "5" == 5 --> true (because both are considered equal after type conversion)
+
+  ** === (Strict equality): It compares both the value and the type without type coercion.
+
+    ** Example: "5" === 5 --> false (because the types are different, one is a string and the other is a number)
+
+                  ------------------
+
+b. Name five (5) different form elements and their description.
+
+  1. <input>: A versatile element used to create various form controls such as text fields, checkboxes, radio buttons, etc.
+
+  2. <textarea>: A large input field used for multi-line text input, like comments or messages.
+
+  3. <select>: A drop-down menu for selecting options. Typically used with <option> element.
+  
+  4. <button>: A clickable button that can be used to submit forms or trigger actions. 
+
+  5. <label>: A label for an input element, often used for accessibility and user interface clarity.
+
+                  ------------------
+
+c. Name the five (5) categories of CSS selector with examples.
+
+    1. Universal Selector ( * ):
+        ** Targets al elements on the page.
+        ** Example: * { color: red; }
+
+    2. Type Selector (Element Selector):
+        ** Targets all elements of a specific type.
+        ** Example: p { font-sizeL 16px } (Target all <p> elements)
+
+    3. Class Selector ( . ):
+        ** Targets elements with a specific class attribute.
+        ** Example: .header { background-color: blue;} (Targets elements with class="header")
+      
+    4. ID Selector ( # ):
+        ** Targets an element with a specific ID.
+        ** Example: #main { margin: 20px } (Targets the element with id="main")
+
+    5. Attribute Selector ( [] ):
+        ** Targets elements based on an attribute or its value.
+        ** Example: input[type="text"] { border: 1px solid black; } (Targets <input> element with type="Text")
+
+d. What are the three (3) ways of inserting CSS into a web page? and give an example for each.
+
+    1. Inline CSS
+        ** CSS is applied directly within the style attribute of an HTML element.
+        ** Example: <p style="color: red;">This is a red paragraph.</p>
+
+    2. Internal CSS
+        ** CSS is written inside the <style> tag in the <head> section of the HTML document.
+        ** Example: 
+          <style>
+            p { color: green; }  
+          </style>
+    
+    3. External CSS:
+        ** CSS is placed in a separate .css file and linked to the HTML document using the <link> tag.
+
+        ** Example: <link rel="stylesheet" type="text/css" href="styles.css">
+
+        
+      
+
+      
+  
