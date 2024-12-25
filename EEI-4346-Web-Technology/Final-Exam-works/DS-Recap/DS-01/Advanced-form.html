@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding-inline: 10px;
+      margin-bottom: 15px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+  </style>
+</head>
+  <body>
+    <h1>HTML Form Example</h1>
+    <form action="/submit" method="POST">
+
+      <table>
+        <tr>
+          <!-- Text Input -->
+          <td><label for="username">Username:</label></td>
+          <td><input type="text" id="username" name="username" placeholder="Enter your username" required></td>
+        </tr>
+
+        <tr>
+          <!-- Password Input -->
+          <td><label for="password">Password:</label></td>
+          <td><input type="text" name="password" id="password" placeholder="Enter your password" required></td>
+        </tr>
+
+        <tr>
+          <!-- Email Input -->
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" name="email" id="email" placeholder="Enter your email" required></td>
+        </tr>
+
+        <tr>
+          <!-- Number Input -->
+          <td><label for="age">Age:</label></td>
+          <td><input type="number" name="age" id="age" placeholder="Enter your age" required></td>
+        </tr>
+
+        <tr>
+          <!-- Textarea -->
+          <td><label for="message">Message:</label></td>
+          <td><textarea name="message" id="message" rows="4" placeholder="Write your message here"></textarea></td>
+        </tr>
+
+        <tr>
+          <!-- Select Dropdown -->
+          <td><label for="country">Country:</label></td>
+          <td>
+              <select name="country" id="country">
+                <option value="us">USA</option>
+                <option value="uk">UK</option>
+                <option value="in">India</option>
+                <option value="sl">Sri Lanka</option>
+                <option value="other">Other</option>
+              </select>
+          </td>
+        </tr>
+
+        <tr>
+          <!-- Radio Buttons -->
+          <td>
+            <fieldset>
+              <legend>Gender:</legend>
+                
+                <label>
+                  <input type="radio" name="gender" value="male" required>Male
+                </label>
+                <!-- <br> -->
+                <label>
+                  <input type="radio" name="gender" value="female" required>Female
+                </label>
+                <!-- <br> -->
+                <label>
+                  <input type="radio" name="gender" value="other" required>Other
+                </label>
+            </fieldset> 
+          </td>
+        </tr>
+
+        <tr>
+          <!-- Checkboxes -->
+          <td>
+              <fieldset>
+                <legend>Interests:</legend>
+              
+                <label>
+                  <input type="checkbox" name="interests" value="coding">Coding
+                </label>
+                <!-- <br> -->
+                <label>
+                  <input type="checkbox" name="interests" value="music">Music
+                </label>
+                <!-- <br> -->
+                <label>
+                  <input type="checkbox" name="interests" value="sports">Sports
+                </label>
+
+              </fieldset>
+          </td>
+        </tr>
+
+        <tr>
+          <!-- Submit Button -->
+          <td><button type="submit">Submit</button></td>
+        </tr>
+      </table>
+
+    </form>
+  </body>
+</html>
+
+<!-- 
+  Features Included:
+    > Text input (username)
+    > Password input (password)
+    > Email input (email)
+    > Number input (age)
+    > Multi-line text area (message)
+    > Dropdown selection (country)
+    > Radio buttons for gender selection
+    > Checkboxes for interests 
+    > Submit button
+-->
+
+<!-- This covers all essential elements of HTML forms in a single example. -->
+
+<!-- 
+Note:
+The required attribute only works for form controls like <input>, <select>, <textarea>, etc.
+  
+-->
+
+<!-- The required attribute in HTML ensures that a form field must be filled out before the form can be submitted. If a user tries to submit the form without filling out a required field, the browser will display a validation message and block the submission. -->
+
