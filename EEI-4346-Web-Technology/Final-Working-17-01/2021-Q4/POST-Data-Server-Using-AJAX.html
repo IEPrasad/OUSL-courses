@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AJAX POST Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#submitButton").click(function (e) {
+        e.preventDefault();   // Prevent form submission
+        const formData = {
+          name: $("#name").val(),
+          email: $("#email").val()
+        };
+        $.ajax ({
+          url: "server.php",  // Replace with your server endpoint
+          type: "POST",
+          data: formData,
+          success: function (response) {
+            $("#response").html("Server Response: " + response);
+          },
+          error: function (xhr, status, error) {
+            $("#response").html("Error: " + error);
+          }
+        });
+      })
+    });
+  </script>
+</head>
+<body>
+  <form id="myForm">
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" id="email" name="email"></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="submitButton">Submit</button></td>
+      </tr>
+    </table>
+  </form>
+
+  <div id="response"></div>
+</body>
+</html>
