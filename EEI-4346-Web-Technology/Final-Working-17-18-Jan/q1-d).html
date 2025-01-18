@@ -1,0 +1,33 @@
+<!-- 
+  d) Write a JavaScript program that sorts words in a sentence in alphabetical order.
+
+  sentence: I am learning JavaScript 
+
+  ..
+
+  Explanation 
+    ** We can solve this problem using these methods in JavaScript 
+
+    split(" "): Breaks the sentence into words using space as a delimiter.
+    
+    sort(): Sorts the words in alphabetical order.
+
+    join(" "): Joins the sorted words back into a string, with spaces between them.
+
+    Let's see how we can do this vvv
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Q1-d) 4346 - 2021 final</title>
+</head>
+<body>
+  <script>
+    const sentence = "I am learning JavaScript";
+    const sortedSentence = sentence.split(" ").sort().join(" ");
+    console.log(sortedSentence);
+  </script>
+</body>
+</html>
