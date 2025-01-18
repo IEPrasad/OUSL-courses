@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Q1 in 2021 - 4346</title>
+</head>
+<body>
+  <script>
+    // b) Write a function that accepts a number as a parameter and adds all-natural numbers smaller or equal than the parameter. 
+      // the result is to be returned.
+        // Example: sum(3) should return 1 + 2 + 3 = 6.
+    
+    function sum(input) {
+      let sum = 0;
+      let steps = "";
+      for (let j = 1; j <= input; j++) {
+        sum += j;
+        steps += (j === 1) ? j : ` + ${j}`;  // Build the steps string
+      }
+      return `${steps} = ${sum}`;   // Combine the steps and result
+    } 
+    console.log(sum(3));
+  
+  </script>
+</body>
+</html>
+
+<!-- 
+  Highlighted points 
+
+    ** When we create a function we don't need to put the var, let or const begin the parameter name 
+
+    the correct way is to defined the parameters for the function 
+    is 
+    function function_name(para1, para2, para3) {
+      ...
+    }
+-->
+
