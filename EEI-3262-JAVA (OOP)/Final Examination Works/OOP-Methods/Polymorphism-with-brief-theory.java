@@ -10,7 +10,7 @@ Polymorphism (Brief Theory)
       * Same method name, different parameters.
       * Resolved at compile time 
     
-    2. Runtime Polymorphism 
+    2. Runtime Polymorphism (Method Overriding):
       * A child class provides its own implementation of a parent 
       class method. 
       * Resolved at runtime.
