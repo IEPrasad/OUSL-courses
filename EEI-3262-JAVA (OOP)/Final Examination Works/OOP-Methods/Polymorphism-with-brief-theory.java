@@ -42,3 +42,49 @@ Example
 
   Integer Addition: 15 
   Double Addition: 16.0
+
+// --------------
+
+ 2. Runtime Polymorphism (Overriding)
+
+ // Parent Class 
+  class Animal {
+    public void sound() {
+      System.out.println("Animal makes a sound.");
+    } 
+  }
+
+  // Child Class 1 
+  class Dog extends Animal {
+    @Override 
+    public void sound() {
+      System.out.println("Dog barks.");
+    }
+  }
+
+  // Child Class 2
+  class Cat extends Animal {
+    @Override 
+    public void sound() {
+      System.out.println("Cat meows.");
+    }
+  }
+
+  // Main Class 
+  public class OverridingExample {
+    public static void main(String[] args) {
+      // Parent reference, child objects
+      Animal myDog = new Dog();
+      Animal myCat = new Cat();
+      Animal animal = new Animal();
+      // Method calls
+      myDog.sound();  // Dog't sound method
+      myCat.sound();  // Cat's sound method
+      animal.sound();  // call the parent class method
+    }
+  }
+
+// >>> Output
+  // Dog barks.
+  // Cat meows.
+  // Animal makes a sound.
