@@ -36,7 +36,6 @@ class Person {
   }
 }
 
-// ------------------------------------------------------------------------------------
 
 // Inheritance: Student class inherits from Person class 
 class Student extends Person {
@@ -70,3 +69,44 @@ interface Displayable {
   void display();
 }
 
+// Implementing the interface in the person class 
+class Teacher extends Person implements Displayable {
+  private String subject;
+  
+  // Constructor 
+  public Teacher(String name, int age, String subject) {
+    super(name, age);
+    this.subject = subject;
+  }
+
+  // Getter and Setter for subject 
+  public String getSubject() {
+    return subject;
+  }
+
+  public void setSubject(String subject) {
+    this.subject = subject;
+  }
+
+  // Implementing the display method from the Displayable interface 
+  @Override 
+  public void display() {
+    super.display();
+    System.out.println("Subject: " + subject);   
+  }
+}
+
+// Main class to demonstrate the concepts 
+public class Intro {
+  public static void main(String[] args) {
+    // Creating objects
+    Person person = new Person("Alice", 30);
+    Student student = new Student("Bob", 20, "S12345");
+    Teacher teacher = new Teacher("Charlie", 40, "Mathematics");
+
+    // Displaying details
+    person.display();
+    student.display();
+    teacher.display();
+  }
+}
