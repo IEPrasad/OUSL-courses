@@ -58,3 +58,54 @@ Example
   // Uses fuel to run.
   // Bike starts with a button.
   // Uses fuel to run
+
+--- 
+
+  2. Using Interface 
+
+  // Interface 
+  interface Animal {
+    void sound(); // Abstract method
+  }
+
+  // Class implementing the interface 
+  class Dog implements Animal {
+    @Override 
+    public void sound() {
+      System.out.println("Dog barks.");
+    }
+  }
+
+  // Another class implementing the interface
+  class Cat implements Animal {
+    @Override
+    public void sound() {
+      System.out.println("Cat meows.");
+    }
+  }
+
+  public class InterfaceExample {
+    public static void main(String[] args) {
+      Animal dog = new Dog();
+      Animal cat = new Cat();
+
+      dog.sound();  // Dog's implementation
+      cat.sound();  // Cat's implementation
+    }
+  }
+
+// >>> Output
+  // Dog barks.
+  // Cat meows.
+
+---
+
+When to Use Abstraction:
+
+  ** Abstract Classes: Use when classes share a common base but require different implementation
+  for some methods. 
+
+  ** Interface: Use when you need to define a contract that multiple classes can follow, 
+  supporting multiple inheritance.
+
+          --- 
