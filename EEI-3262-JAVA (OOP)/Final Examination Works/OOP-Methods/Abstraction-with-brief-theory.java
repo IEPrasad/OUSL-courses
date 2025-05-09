@@ -106,6 +106,6 @@ When to Use Abstraction:
   for some methods. 
 
   ** Interface: Use when you need to define a contract that multiple classes can follow, 
-  supporting multiple inheritance.
+  supporting multiple inheritance.  
 
           --- 

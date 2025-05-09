@@ -1,0 +1,60 @@
+<!-- ** I have several friends.
+Alex, Mary, Rachel are my friends.
+
+Ana is my best friend. 
+
+  Structured
+  Formatted
+  Common rules & syntax
+
+-->
+
+<friendList>
+  <friend>
+    <name>Alex</name>
+  </friend>
+  <friend>
+    <name>Mary</name>
+  </friend>  <friend>
+    <name>Rachel</name>
+  </friend>  <friend>
+    <name>Ana</name>
+  </friend>
+</friendList>
+
+    <!-- 
+      XML = In we use tags <> or marks
+    
+    and you can use your own tags i.e. tags are not 
+    limited and not predefined,
+    it can be extended 
+
+    XML is used to store transport data
+    XML is a W3C Recommendation 
+    a software and hardware independent way of storing,
+    transporting, and sharing data
+
+     -->
+
+
+  <!-- 
+
+    XML Validation
+
+        Syntax | Structure
+
+          ** is well formed (satisfy all the basic syntax condition) behaves according to 
+          predefined DTD or XML schema
+
+                DTD - Document Type Definition
+                XSD - XML Schema Definition
+
+
+   -->
+
+   <!-- 
+    wikipedia 
+
+        (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable 
+
+    -->
