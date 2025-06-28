@@ -106,3 +106,18 @@ public class MaxHeap {
     maxHeap.printHeap();
   }
 } 
+
+
+
+
+
+/*
+🔍 Features
+insert(value) → Add a value to the heap
+
+extractMax() → Remove and return the max (root)
+
+getMax() → Just return the max
+
+printHeap() → Display current heap
+*/
