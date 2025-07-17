@@ -1,57 +1,57 @@
-# Java Data Structures and Algorithms
+# Java Data Structures & Algorithms Collection
 
-This repository contains Java implementations of commonly used **Data Structures** and **Algorithms**. These codes are written for learning, testing, and interview preparation purposes.
+This repository contains a collection of core data structure and algorithm implementations in Java, organized for academic reference and project use.
 
-## 📂 File Structure
+## 🔧 Data Structures Implementations
 
-| File Name                   | Description                                |
-|----------------------------|--------------------------------------------|
-| MaxHeap.java               | Implementation of Max Heap (Priority Queue)|
-| SinglyLinkedList.java      | Singly Linked List with basic operations   |
-| DoublyLinkedList.java      | Doubly Linked List implementation          |
-| CircularLinkedList.java    | Circular Linked List structure             |
-| StackUsingArray.java       | Stack implementation using array           |
-| StackUsingLinkedList.java  | Stack using linked list                    |
-| QueueUsingArray.java       | Queue implementation with array            |
-| QueueUsingLinkedList.java  | Queue with linked list structure           |
-| CircularQueue.java         | Circular Queue using array                 |
-| DequeUsingArray.java       | Double Ended Queue using array             |
-| BinarySearch.java          | Binary Search Algorithm                    |
-| LinearSearch.java          | Linear Search Algorithm                    |
-| BubbleSort.java            | Bubble Sort Algorithm                      |
-| SelectionSort.java         | Selection Sort Algorithm                   |
-| InsertionSort.java         | Insertion Sort Algorithm                   |
-| MergeSort.java             | Merge Sort Algorithm                       |
-| QuickSort.java             | Quick Sort Algorithm                       |
-| HeapSort.java              | Heap Sort Algorithm using Max Heap         |
-| KMPStringSearch.java       | Knuth-Morris-Pratt String Search Algorithm |
-| HashTableChaining.java     | Hash Table using Chaining (Separate Chaining) |
-
----
-
-## 🧠 Learning Goals
-
-- Understand internal workings of data structures
-- Learn algorithm design and optimization
-- Practice time and space complexities
-- Prepare for coding interviews
+| No. | File Name                  | Description                                      |
+|-----|----------------------------|--------------------------------------------------|
+| 1   | StackUsingArray.java       | Stack implementation using array                |
+| 2   | QueueUsingArray.java       | Queue implementation using array                |
+| 3   | CircularQueue.java         | Circular queue using array                      |
+| 4   | SinglyLinkedList.java      | Singly Linked List                              |
+| 5   | DoublyLinkedList.java      | Doubly Linked List                              |
+| 6   | BinaryTree.java            | Simple Binary Tree                              |
+| 7   | BinarySearchTree.java      | Binary Search Tree                              |
+| 8   | AVLTree.java               | AVL (self-balancing) Binary Search Tree         |
+| 9   | RedBlackTree.java          | Red-Black Tree implementation                   |
+| 10  | FenwickTree.java           | Binary Indexed Tree (Fenwick Tree)              |
+| 11  | SegmentTree.java           | Segment Tree for range queries                  |
+| 12  | Trie.java                  | Trie (Prefix Tree)                              |
+| 13  | CustomHashMap.java         | Custom Hash Map implementation                  |
+| 14  | HashTableChaining.java     | Hash Table using Chaining                       |
+| 15  | MinHeap.java               | Min Heap implementation                         |
+| 16  | MaxHeap.java               | Max Heap implementation                         |
+| 17  | DisjointSet.java           | Union-Find (Disjoint Set Union)                 |
+| 18  | GraphAdjList.java          | Graph using Adjacency List                      |
+| 19  | GraphBFS.java              | Breadth-First Search on Graph                   |
+| 20  | GraphDFS.java              | Depth-First Search on Graph                     |
 
 ---
 
-## 🛠️ Requirements
+## 🧠 Algorithm Implementations
 
-- Java 8 or above
-- IDE (e.g., IntelliJ IDEA, VS Code, Eclipse)
-- JDK properly configured
+| No. | File Name                  | Description                                      |
+|-----|----------------------------|--------------------------------------------------|
+| 1   | DijkstraAlgorithm.java     | Dijkstra's Algorithm for shortest path          |
+| 2   | KruskalAlgorithm.java      | Kruskal’s Algorithm for MST                     |
+| 3   | KMPAlgorithm.java          | Knuth-Morris-Pratt string matching algorithm    |
+| 4   | KMPStringSearch.java       | Another version of KMP with pattern match       |
+| 5   | SuffixArray.java           | Suffix Array construction                       |
+| 6   | TopologicalSort.java       | Topological Sort using DFS                      |
 
 ---
 
-## 🚀 How to Run
+## 📁 Structure
 
-1. Clone this repository
-2. Navigate to any `.java` file
-3. Run using your preferred Java IDE or terminal
+- All code files are written in **pure Java**, without any external libraries.
+- Each file includes a `main()` method with sample input/output when applicable.
+- Easy to test, extend, and integrate into academic or personal projects.
 
-```bash
-javac FileName.java
-java FileName
+---
+
+## 🚀 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
