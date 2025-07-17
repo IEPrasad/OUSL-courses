@@ -1,55 +1,57 @@
-# Data Structures and Algorithms (DSA) - Notes & Examples
+# Java Data Structures and Algorithms
 
-Welcome to my Data Structures and Algorithms (DSA) repository. This README serves as a beginner-friendly guide covering the fundamental data structures and algorithms concepts with examples in code.
+This repository contains Java implementations of commonly used **Data Structures** and **Algorithms**. These codes are written for learning, testing, and interview preparation purposes.
 
----
+## 📂 File Structure
 
-## 📚 Table of Contents
-
-- [Introduction](#introduction)
-- [Why DSA?](#why-dsa)
-- [Basic Data Structures](#basic-data-structures)
-  - [Arrays](#arrays)
-  - [Linked Lists](#linked-lists)
-  - [Stacks](#stacks)
-  - [Queues](#queues)
-  - [Hash Tables (Maps)](#hash-tables-maps)
-  - [Trees](#trees)
-  - [Graphs](#graphs)
-- [Basic Algorithms](#basic-algorithms)
-  - [Sorting Algorithms](#sorting-algorithms)
-  - [Searching Algorithms](#searching-algorithms)
-- [Common Terms](#common-terms)
-- [Resources](#resources)
-
----
-
-## 📝 Introduction
-
-**Data Structures:** Organized formats to store and manage data efficiently (e.g., arrays, linked lists, trees).
-
-**Algorithms:** Step-by-step procedures to solve computational problems (e.g., searching, sorting).
-
-Efficient code requires the right combination of data structures and algorithms.
+| File Name                   | Description                                |
+|----------------------------|--------------------------------------------|
+| MaxHeap.java               | Implementation of Max Heap (Priority Queue)|
+| SinglyLinkedList.java      | Singly Linked List with basic operations   |
+| DoublyLinkedList.java      | Doubly Linked List implementation          |
+| CircularLinkedList.java    | Circular Linked List structure             |
+| StackUsingArray.java       | Stack implementation using array           |
+| StackUsingLinkedList.java  | Stack using linked list                    |
+| QueueUsingArray.java       | Queue implementation with array            |
+| QueueUsingLinkedList.java  | Queue with linked list structure           |
+| CircularQueue.java         | Circular Queue using array                 |
+| DequeUsingArray.java       | Double Ended Queue using array             |
+| BinarySearch.java          | Binary Search Algorithm                    |
+| LinearSearch.java          | Linear Search Algorithm                    |
+| BubbleSort.java            | Bubble Sort Algorithm                      |
+| SelectionSort.java         | Selection Sort Algorithm                   |
+| InsertionSort.java         | Insertion Sort Algorithm                   |
+| MergeSort.java             | Merge Sort Algorithm                       |
+| QuickSort.java             | Quick Sort Algorithm                       |
+| HeapSort.java              | Heap Sort Algorithm using Max Heap         |
+| KMPStringSearch.java       | Knuth-Morris-Pratt String Search Algorithm |
+| HashTableChaining.java     | Hash Table using Chaining (Separate Chaining) |
 
 ---
 
-## 🚀 Why DSA?
+## 🧠 Learning Goals
 
-- Improves problem-solving skills
-- Optimizes code performance
-- Essential for technical interviews
-- Builds logical and analytical thinking
+- Understand internal workings of data structures
+- Learn algorithm design and optimization
+- Practice time and space complexities
+- Prepare for coding interviews
 
 ---
 
-## 🔧 Basic Data Structures
+## 🛠️ Requirements
 
-### 📦 Arrays
+- Java 8 or above
+- IDE (e.g., IntelliJ IDEA, VS Code, Eclipse)
+- JDK properly configured
 
-- Fixed-size collection of elements of the same type.
-- Fast access with index `O(1)`.
-- Example:
+---
 
-```c
-int arr[5] = {1, 2, 3, 4, 5};
+## 🚀 How to Run
+
+1. Clone this repository
+2. Navigate to any `.java` file
+3. Run using your preferred Java IDE or terminal
+
+```bash
+javac FileName.java
+java FileName
