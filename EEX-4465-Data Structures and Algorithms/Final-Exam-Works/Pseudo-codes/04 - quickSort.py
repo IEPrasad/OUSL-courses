@@ -24,3 +24,4 @@ FUNCTION Partition(Arr, low, high)
     SWAP Arr[i + 1] and Arr[high]
     RETURN (i + 1)
 END FUNCTION
+
