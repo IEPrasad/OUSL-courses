@@ -57,20 +57,28 @@ MergeSort Function
 
 The MergeSort function is the core recursive part of the algorithm.
 
-Base Case: The IF left < right condition acts as the base case for the recursion. If left is not less than right, it means the subarray has one element or is empty, so it's already sorted and the function returns without doing anything.
+    1.  Base Case: The IF left < right condition acts as the base case for the recursion. If left is not less 
+        than right, it means the subarray has one element or is empty, so it's already sorted and the function 
+        returns without doing anything.
 
-Divide: If the condition is true, it finds the midpoint of the array. It then recursively calls itself on the left half (MergeSort(Arr, left, mid)) and the right half (MergeSort(Arr, mid + 1, right)). This process continues until the array is fully divided into single-element subarrays.
+    2.  Divide: If the condition is true, it finds the midpoint of the array. It then recursively calls itself on 
+        the left half (MergeSort(Arr, left, mid)) and the right half (MergeSort(Arr, mid + 1, right)). This 
+        process continues until the array is fully divided into single-element subarrays.
 
-Conquer: Once the recursion unwinds, the Merge function is called to combine the sorted halves.
+    3.  Conquer: Once the recursion unwinds, the Merge function is called to combine the sorted halves.
 
 Merge Function
 
 The Merge function is a helper function that takes two sorted subarrays and merges them into a single sorted array.
 
-Temporary Arrays: It first creates two temporary arrays, L and R, to hold the elements of the left and right subarrays, respectively.
+    1.  Temporary Arrays: It first creates two temporary arrays, L and R, to hold the elements of the left and 
+        right subarrays, respectively.
 
-Comparison and Merging: It then iterates through both temporary arrays, comparing elements from L and R and placing the smaller element into the correct position in the original array Arr. This continues until all elements from one of the temporary arrays have been placed.
+    2.  Comparison and Merging: It then iterates through both temporary arrays, comparing elements from L and R 
+        and placing the smaller element into the correct position in the original array Arr. This continues until 
+        all elements from one of the temporary arrays have been placed.
 
-Remaining Elements: Finally, it copies any remaining elements from the temporary arrays back into the original array. This handles cases where one subarray might have more elements than the other.
+    3.  Remaining Elements: Finally, it copies any remaining elements from the temporary arrays back into the 
+        original array. This handles cases where one subarray might have more elements than the other.
 
 '''
